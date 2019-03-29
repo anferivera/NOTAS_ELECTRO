@@ -1,0 +1,146 @@
+\documentclass[letterpaper,13pt]{book}
+\usepackage[spanish]{babel}
+\addto\captionsspanish{
+        \def\listtablename{\'Indice de tablas}%
+        \def\tablename{Tabla}} 
+\usepackage{graphicx, color}
+\usepackage{amsmath}
+\usepackage{amscd}
+%\usepackage{youngtab}
+\usepackage{titlesec}
+\usepackage[latin1]{inputenc}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{syntonly}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+
+
+%***************************** Formato*********************************************
+\newcommand{\bigrule}{\titlerule[0.5mm]}
+\titleformat{\chapter}[display] % cambiamos el formato de los cap\'{\i}tulos
+{\bfseries\Huge} % por defecto se usar\'{a}n caracteres de tama\~{n}o \Huge en negrita
+{% contenido de la etiqueta
+\titlerule % l\'{\i}nea horizontal
+\filleft % texto alineado a la derecha
+\Large\chaptertitlename\ % "Cap\'{\i}tulo" o "Ap\'{e}ndice" en tama\~{n}o \Large en lugar de \Huge
+\Large\thechapter} % n\'{u}mero de cap\'{\i}tulo en tama\~{n}o \Large
+{0mm} % espacio m\'{\i}nimo entre etiqueta y cuerpo
+{\filleft} % texto del cuerpo alineado a la derecha
+[\vspace{0.5mm} \bigrule] % despu\'{e}s del cuerpo, dejar espacio vertical y trazar l\'{\i}nea horizontal gruesa
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO]{\leftmark} % En las p\'{a}ginas impares, parte izquierda del encabezado, aparecer\'{a} el nombre de cap\'{\i}tulo
+\fancyhead[RE]{\rightmark} % En las p\'{a}ginas pares, parte derecha del encabezado, aparecer\'{a} el nombre de secci\'{o}n
+\fancyhead[RO,LE]{\thepage} % N\'{u}meros de p\'{a}gina en las esquinas de los encabezados
+
+\renewcommand{\chaptermark}[1]{\markboth{\textbf{\thechapter. #1}}{}} % Formato para el cap\'{\i}tulo: N. Nombre
+\renewcommand{\sectionmark}[1]{\markright{\textbf{\thesection. #1}}} % Formato para la secci\'{o}n: N.M. Nombre
+
+\renewcommand{\headrulewidth}{0.6pt} % Ancho de la l\'{\i}nea horizontal bajo el encabezado
+%\renewcommand{\footrulewidth}{0.6pt} % Ancho de la l\'{\i}nea horizontal sobre el pie (que en este ejemplo est\'{a} vac\'{\i}o)
+\setlength{\headheight}{1.5\headheight} % Aumenta la altura del encabezado en una vez y media
+
+%\usepackage[latin1]{inputenc}
+%\usepackage{xthesis}
+  %\setlength{\hoffset}{0.cm}
+  %\setlength{\voffset}{0.cm}
+  \setlength{\marginparsep}{0pt}
+  \setlength{\footskip}{0pt}
+%  \pagestyle{headings}
+  \setlength{\oddsidemargin}{0.5cm}
+  \setlength{\evensidemargin}{0.4cm}
+  \setlength{\textwidth}{16.5cm}
+  \setlength{\topmargin}{-1.4cm}
+  \setlength{\headheight}{0.5cm}
+  \setlength{\headsep}{0.7cm}
+  \setlength{\topskip}{1.0cm}
+  \setlength{\textheight}{23.0cm}
+  \setlength{\footskip}{1.6cm}%era1.6
+  \setlength{\parindent}{0.4cm}
+  \setlength{\marginparwidth}{0cm}
+
+  \newcommand{\be}{\begin{equation}}
+  \newcommand{\ee}{\end{equation}}
+  \newcommand{\rmo}{\mbox{}}
+ % \newcommand{\bg}{\begin{gather}}
+  %\newcommand{\eg}{\end{gather}}
+ % \newcomand{\ML}{\mathcal{L}}
+
+\def\tablename{tabla}
+\usepackage{hyperref}
+
+%***************************** end formato ******************************************
+%**************************** CUERPO PRINCIPAL ************************************
+\begin{document}
+\frontmatter%enumera en romano
+
+\input{portada}
+\newpage{\pagestyle{empty}\cleardoublepage} %deja una página en blanco
+%%+++++++++++++++DEDICATORIA+++++++++++++++++++++++++++++++++++++
+%\thispagestyle{empty}
+%%\include{dedicatoria} \frontmatter
+%%\begin{center}
+%%\vspace{26cm}
+%%\end{center}
+%\vspace*{7cm}
+%\begin{flushright}
+%\textit{A nuestras familias por simplemente soportarnos,}
+%\end{flushright}
+%\begin{flushright}
+%\textit{a la vida y a la naturaleza por permitirnos ser parte de ella,}
+%\end{flushright}
+%\begin{flushright}
+%\textit{... a todos aquellos que llevamos en el corazón.}
+%\end{flushright}
+%%\newpage{\pagestyle{empty}\cleardoublepage}
+%%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%\chapter{Objetivos y programa del curso}
+%\input{objetivos}
+%\newpage{\pagestyle{empty}\cleardoublepage}
+%\chapter{Anécdota anónima}
+%\input{anecdota}
+\newpage{\pagestyle{empty}\cleardoublepage}
+%%\newpage{\pagestyle{empty}\cleardoublepage}
+\tableofcontents %\mainmatter \listoftables \listoffigures
+%\mainmatter %comienza a enumerar desde aqui
+%\chapter*{Introducción\markboth{Introducción}{Introducción}}
+%\label{sec:introduccion}
+%\addcontentsline{toc}{chapter}{Introducción}%para que no lo enumere
+%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\mainmatter
+\chapter{Introducción}
+\input{introduccion/Introduccion}
+\chapter{Gravitación}
+\input{gravitacion/gravitacion.tex}
+\chapter{Electrostática}
+\input{electrostatica/electrostatica.tex}
+\chapter{Magnetostática}
+\input{magnetostatica/magnetostatica.tex}
+
+
+%\appendix\chapter{Programa-CIC.c}
+%\input{programaCIC}
+%\label{codigoCIC}
+\normalsize
+%\chapter*{Conclusiones\markboth{Conclusiones}{Conclusiones}}
+%\addcontentsline{toc}{chapter}{Conclusiones}
+%\chapter*{Conclusiones}
+%\addcontentsline{toc}{chapter}{Conclusiones}
+%\input{conclusiones}
+\newpage{\pagestyle{empty}\cleardoublepage}
+%\chapter*{Agradecimientos}
+%\input{Agradecimientos}
+%\newpage{\pagestyle{empty}\cleardoublepage}
+%\input{Bibliografia}
+%\chapter*{Agradecimientos}
+%\input{Agradecimientos}
+
+%%************************ FIN DEL CUERPO PRINCIPAL *********************************
+%%*********************************************************************************
+\end{document}

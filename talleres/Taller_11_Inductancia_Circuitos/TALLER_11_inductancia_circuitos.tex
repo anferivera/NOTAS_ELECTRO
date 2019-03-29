@@ -1,0 +1,267 @@
+\documentclass[11pt]{article}
+
+\usepackage{epsfig}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[reqno]{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\usepackage[usenames,dvipsnames]{pstricks}
+%\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+
+\topmargin -2.5 cm
+\oddsidemargin -1.5 cm
+\textheight 25.0 cm
+\textwidth 18.5cm
+
+\newcommand{\abre}{\textquestiondown}
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+%\twocolumn[
+
+%\begin{minipage}{5 cm}{\begin{center}
+%\includegraphics[scale=0.7]{escudo}\end{center}}\end{minipage}
+%\begin{minipage}{11 cm}{
+%\begin{flushleft}\vspace*{0.2cm} \textbf{Universidad de Antioquia}\\[2mm] 
+%Facultad de Ciencias Exactas y Naturales\\[2mm] 
+%Instituto de Física\\[2mm] 
+Física de campos. TALLER 11 - \textbf{Inductancia, Circuitos y Energía electromagnética} 
+%\end{flushleft}
+%}
+%\end{minipage}
+
+
+\hrulefill
+%\footnote{Algunas de las figuras son tomadas del texto: \textit{Physics For Scientists And Engineers 6E By Serway And Jewett.pdf}} 
+
+\vspace{0.5cm}
+%]
+
+
+
+
+
+
+
+
+
+
+
+{\color{red}INDUCTANCIA}
+
+\begin{enumerate} 
+%ejercicio
+\item  Determinar la inductancia de un solenoide de N vueltas, de longitud $l$ (grande) y área transversal $A$.
+\begin{align}
+L=\mu_0\dfrac{N^2}{l}A = \mu_0 n^2 l A = \mu_0 n^2 \text{Vol.} \nonumber
+\end{align}
+
+%ejercicio
+\item  Determinar la inductancia de un toroide de N vueltas, de radio promedio $r$ y área transversal $A$.
+\begin{align}
+L=\mu_0\dfrac{N^2}{2\pi r}A  \nonumber
+\end{align}
+
+%ejercicio
+\item Calcular la inductancia por unidad de longitud ($l$) de un cable coaxial muy largo. Suponga que son dos cubiertas cilíndricas de radios $a$ y $b>a$ con corrientes opuestas.
+\begin{align*}
+\dfrac{L}{l}=\mu_0\dfrac{1}{2\pi}\ln\left(\dfrac{b}{a}\right)
+\end{align*}
+
+
+{\color{red}CIRCUITOS RL}
+
+\item Calcule la corriente en un circuito RL que consiste de una resistencia $R$, un inductor $L$ y una \textit{fem} $\xi$ conectadas en serie.
+\begin{align*}
+I(t)=\dfrac{\xi}{R}\left(1-e^{-t/\tau}\right) \hspace{0.5 cm} \text{con} \hspace{0.5 cm} \tau=\dfrac{L}{R}
+\end{align*}
+
+%ejercicio
+\item ¿Cuál es la interpretación física del tiempo característico $\tau$ del sistema RL?
+
+%ejercicio
+\item Una resistencia $R=6\,\Omega$, un inductor $L=30$ mH y una fem $\xi=12$ V se conectan en serie.
+\begin{enumerate}
+\item Halle el tiempo característico del sistema ($\tau=5$ ms).
+\item Calcular la corriente en un tiempo $t=2$ ms después de conectarse el circuito ($I\approx 0.66$ A).
+\item Graficar las caídas de potencial en el resistor y el inductor en función del tiempo.
+\end{enumerate}
+
+%ejercicio
+\begin{minipage}{13 cm}
+\item En la figura, se cierra el interruptor $S_1$ dejando abierto el interruptor $S_2$. La inductancia es $L=0.15$ H y la resistencia es $R=12$ $\Omega$. 
+Cuando la corriente ha alcanzado su valor final, la energía almacenada en el interruptor es de $0.26$ J. Una vez que esto ocurre se abre $S_1$ y se cierra $S_2$. ¿Cuánto tiempo después de cerrar $S_2$ tarda la energía almacenada en el inductor en disminuir  $0.10$ J?
+\end{minipage}
+\begin{minipage}{6 cm}
+\includegraphics[scale=0.7]{circuitorl}
+\end{minipage}
+
+
+
+
+
+
+
+
+
+\vspace{1.0 cm}
+
+{\color{red}CIRCUITOS RC}
+
+%ejercicio
+\item Considere un capacitor $C$ y un resistencia $R$ conectados en serie a una fem $\xi=V_0$, tal como se muestra en la figura. Suponga que interruptor se cierra en un tiempo inicial $t=0$ y que el capacitor inicialmente está descargado.
+
+\begin{minipage}{6 cm}
+\includegraphics[scale=0.4]{circuitoRC}
+\end{minipage}
+\begin{minipage}{11 cm}
+\begin{enumerate}
+\item Determinar la carga en el capacitor en función del tiempo.
+\begin{align*}
+q(t)=V_0 C \left(1-e^{-t/RC}\right)
+\end{align*}
+\item Determinar la corriente del circuito en función del tiempo.
+\begin{align*}
+I(t)=\dfrac{V}{R}\,e^{-t/RC}
+\end{align*}
+\item Graficar q(t) vs t y I(t) vs t.
+\end{enumerate}
+\end{minipage}
+
+
+
+%ejercicio 
+\item Una resistencia $R=15$ k$\Omega$ y un capacitor $C$ inicialmente descargado se conectan en serie a una batería $V_0=24$ V tal como se muestra en la figura anterior. En $t=0$ $s$ se cierra el interruptor $S$ del circuito RC. Determinar el tiempo en el cual el voltaje en la resistencia es de 16 V. Asuma que el tiempo característico del circuito es $\tau=24\, \mu$s.
+%
+\begin{align*}
+t=9.73\, \mu\text{s} 
+\end{align*}
+
+
+%ejercicio
+\item Considere el circuito mostrado en la figura. En $t=0$ se cierra el interruptor $S_1$, de tal modo que el capacitor comienza a cargarse. Determinara la carga eléctrica almacenada en el capacitor en función del tiempo.
+\begin{minipage}{9 cm}
+\includegraphics[scale=0.8]{circuito-RRC}
+\end{minipage}
+\begin{minipage}{6 cm}
+\begin{align*}
+q(t)=\dfrac{\xi C R_2}{(R_1+R_2)}\left(1-\exp^{-\dfrac{(R_1+R_2)\,t}{CR_1R_2 }}\right)
+\end{align*}
+\end{minipage}
+
+
+
+
+
+
+
+
+\vspace{1.0 cm}
+
+
+{\color{red}CIRCUITOS LC}
+
+%ejercicio
+\item Considere un capacitor previamente cargado con una carga $\pm Q$ que se conecta en serie a un inductor. 
+\begin{enumerate}
+\item Determinar la carga en uno de los platos del capacitor en función del tiempo.
+\begin{align*}
+Q(t)=Q\sin\left(\omega_0 t + \pi/2\right)
+\end{align*}
+\item Determinar la corriente en el inductor en función del tiempo.
+\begin{align*}
+I(t)=I_{\text{max}}\cos\left(\omega_0 t + \pi/2\right)
+\end{align*}
+\item ¿Cuál es el valor de $\omega_0$?
+\item ¿Cuál es la frecuencia de oscilación de la carga?
+\end{enumerate} 
+
+
+
+
+
+
+
+
+
+\vspace{1 cm}
+
+{\color{red}CIRCUITOS RLC libre (Amortiguado)}
+
+%ejercicio
+\item Considere un capacitor $C$ previamente cargado con una carga $\pm Q$ que se conecta en serie a un inductor $L$ y a una resistencia $R$.
+\begin{enumerate}
+\item Determinar la corriente en el inductor en función del tiempo. Asuma que se tiene amortiguación débil.
+\begin{align*}
+I(t)&= I_{\text{max}}\, \exp^{-\gamma t} \sin\left(\omega t + \pi/2\right)\\
+I(t)&= I_{\text{max}}\, \exp^{-\dfrac{R}{2L}t}\sin\left(\sqrt{\dfrac{1}{LC}-\dfrac{R^2}{4L^2}}t+\pi/2\right)
+\end{align*}
+\item ¿Cuál es la frecuencia de oscilación de la carga?
+\item Grafique la corriente en función del tiempo.
+\end{enumerate} 
+
+
+
+
+
+
+\vspace{1.0 cm}
+
+{\color{red}CIRCUITOS RLC  (Forzado)}
+
+%ejercicio
+\item Considere un capacitor $C$ que se conecta en serie a un inductor $L$, a una resistencia $R$ y una \textit{fem} variable $\xi=V_0\sin(\omega_f t)$:
+\begin{enumerate}
+\item Determinar la corriente en el inductor en función del tiempo. 
+\begin{align*}
+I(t)&= I_{0}\, \sin\left(\omega_f t - \alpha \right)
+=\dfrac{V_0}{\sqrt{R^2+\left(\omega_f L - \dfrac{1}{\omega_f C}\right)^2}}\, \sin\left(\omega_f t - \alpha \right)
+\end{align*}
+\item ¿Cuál es la frecuencia de oscilación de la carga?
+\item Grafique la corriente en función del tiempo.
+\end{enumerate} 
+
+%ejercicio
+\item Un circuito tiene una resistencia de $40\Omega$, un inductor de 0.1 H y un capacitor de $10^{-5}$ F conectados en serie a una \textit{fem} de 60 Hz de frecuencia. 
+\begin{enumerate}
+\item Encontrar la frecuencia de resonancia del circuito. 
+\end{enumerate}
+
+
+
+
+\vspace{1.0 cm}
+
+{\color{red}ENERGÍA DEL CAMPO MAGNÉTICO}
+
+%ejercicio
+\item Muestre que la energía eléctrica almacenada en un capacitor está dada por:
+\begin{align*}
+U_E=\dfrac{1}{2}C_0 (\Delta V)^2
+\end{align*}
+
+%ejercicio
+\item Muestre que la energía eléctrica almacenada en un inductor está dada por:
+\begin{align*}
+U_B=\dfrac{1}{2}L I^2
+\end{align*}
+
+%ejercicio
+\item Muestre que la densidad de energía asociada al campo electromagnético está dada por:
+\begin{align*}
+u=\dfrac{1}{2}\epsilon_0 E_0^2 + \dfrac{1}{2\mu_0}B_0^2
+\end{align*}
+
+
+
+\end{enumerate}
+
+\end{document}

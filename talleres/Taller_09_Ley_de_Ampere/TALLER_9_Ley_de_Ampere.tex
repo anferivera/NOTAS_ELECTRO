@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+
+\usepackage{epsfig}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[reqno]{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\usepackage[usenames,dvipsnames]{pstricks}
+%\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+
+\topmargin -2.5 cm
+\oddsidemargin -1.5 cm
+\textheight 26.5 cm
+\textwidth 18.5cm
+
+\newcommand{\abre}{\textquestiondown}
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+%\twocolumn[
+
+%\begin{minipage}{5 cm}{\begin{center}
+%\includegraphics[scale=0.7]{escudo}\end{center}}\end{minipage}
+%\begin{minipage}{11 cm}{
+%\begin{flushleft}\vspace*{0.2cm} \textbf{Universidad de Antioquia}\\[2mm] 
+%Facultad de Ciencias Exactas y Naturales\\[2mm] 
+%Instituto de Física\\[2mm] 
+Física de campos. TALLER 9 - \textbf{Ley de Ampere} 
+%\end{flushleft}
+%}
+%\end{minipage}
+
+
+\hrulefill
+%\footnote{Algunas de las figuras son tomadas del texto: \textit{Physics For Scientists And Engineers 6E By Serway And Jewett.pdf}} 
+
+\vspace{0.5cm}
+%]
+
+
+
+
+
+
+
+
+
+
+
+{\color{red}LEY DE AMPERE}
+\vspace{0.6 cm}
+
+\begin{enumerate} 
+
+\item Leidy Usando la ley de Ampere, calcule el campo magnético en el interior de solenoide muy largo de longitud $l$, de $N$ vueltas y de corriente $I$.
+\begin{displaymath}
+B=\mu_0 \dfrac{N}{l}I = \mu_0 n I \hspace*{0.5 cm};\hspace*{0.5 cm} \dfrac{N}{l}=n
+\end{displaymath}
+
+\item Usando la ley de Ampere, calcule el campo magnético dentro de un toroide e radio $r$.
+\begin{displaymath}
+B=\mu_0 \dfrac{NI}{2\pi r}
+\end{displaymath}
+
+\item A lo largo de un cilindro de radio $R$ fluye una corriente $I$ distribuida de modo uniforme. Calcule el campo magnético $\vec{B}$ en el interior y en el exterior del cable.
+\begin{displaymath}
+B=\dfrac{\mu_0}{2\pi}\dfrac{r}{R^2} \hspace*{1 cm} 0\ll r \ll R
+\end{displaymath}
+\begin{displaymath}
+B=\dfrac{\mu_0}{2\pi} \dfrac{1}{r} \hspace*{1 cm} r\gg R
+\end{displaymath}
+
+\item Calcule el campo magnético de un cilindro de radio $R$ por el que fluye una corriente cuya densidad es $J=br$, donde $b$ es una constante y $r$ es la distancia radial al centro del cilindro.
+\begin{displaymath}
+B=\mu_0 b \dfrac{r^2}{3} \hspace*{1 cm} 0\ll r\ll R
+\end{displaymath}
+\begin{displaymath}
+B=\mu_0 b \dfrac{R^3}{3}\dfrac{1}{r} \hspace*{1 cm} r\gg R
+\end{displaymath}
+
+\item Se tienen un cilindro de radio $R_{1}$ concéntrico con un cascarón cilíndrico de radio interno $R_{2}$ y radio externo $R_{3}$ tal como se muestra en la figura. El cilindro interior tiene una densidad de corriente $\vec{J}_{1}=b r \hat{k}$, donde $b$ es una constante y $r$ es la distancia al centro. El cascarón cilíndrico tiene una densidad de corriente constante $\vec{J}_{2}=-J_{2}\hat{k}$.\\
+
+\begin{minipage}{7 cm}{
+Hallar el campo magnético para:
+\begin{enumerate}
+\item $r \le R_{1}$
+\item $R_{1} \le r \le R_{2}$
+\item $R_{2} \le r \le R_{3}$
+\item $r \geq R_{3}$
+\end{enumerate}
+}
+\end{minipage}
+\begin{minipage}{10 cm}{
+\includegraphics[scale=0.6]{cilindro}
+}
+\end{minipage}
+
+\vspace*{1cm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}

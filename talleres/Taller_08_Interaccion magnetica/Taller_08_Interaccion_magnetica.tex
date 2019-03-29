@@ -1,0 +1,271 @@
+\documentclass[12pt]{article}
+
+\usepackage{epsfig}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[reqno]{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\usepackage[usenames,dvipsnames]{pstricks}
+%\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+
+\topmargin -2.5 cm
+\oddsidemargin -1.5 cm
+\textheight 25.5 cm
+\textwidth 18.5cm
+
+\newcommand{\abre}{\textquestiondown}
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+
+
+Física de campos. \textbf{TALLER 8: Interacción magnética}
+
+\hrulefill
+
+\footnote{Algunas de las figuras son tomadas del texto: \textit{Physics For Scientists And Engineers 6E By Serway And Jewett.pdf}} 
+
+
+
+
+\begin{enumerate} 
+
+\begin{minipage}{12 cm}{
+%EJERCICIO
+\item Un protón entra con una velocidad  $\vec{v}=8.0 \times 10^6$ $m/s^2$ $\hat{i}$ en una región donde existe un campo magnético $B=2.5$ $T$ que está en el plano $xy$ formando un ángulo $\theta=60°$ con el eje $x$. Calcule la fuerza magnética que siente el protón y la aceleración del mismo.\\
+Ayuda: Use $m_{p}=1.67\times 10^{-27}$ $kg$ y $|e|=1.609 \times 10^{-19}$ $C$.
+}\end{minipage}
+%\begin{minipage}{6 cm}{
+%\scalebox{0.7} % Change this value to rescale the drawing.
+%{
+%\begin{pspicture}(0,-2.5284376)(7.411875,2.5284376)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{<-}(3.2296875,2.1915624)(3.2496874,-0.4684375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{->}(3.2296875,-0.5084375)(7.0896873,-0.5084375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{->}(3.2496874,-0.5284375)(0.2696875,-2.3484375)
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{->}(3.2496874,-0.5284375)(4.6696873,-2.0684376)
+%\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](4.6096873,-2.0484376)(6.4696875,-0.5084375)
+%\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](4.5896873,-2.0684376)(0.7296875,-2.1084375)
+%\psarc[linewidth=0.04](3.1996875,-0.2984375){0.41}{247.61986}{295.34616}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(3.9842187,-1.4984375){$\vec{B}$}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(3.2085938,2.4015625){z}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(0.08515625,-2.3784375){x}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(7.2654686,-0.4784375){y}
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{->}(3.2296875,-0.5084375)(1.6896875,-1.4484375)
+%\usefont{T1}{ptm}{m}{n}
+%\rput(3.1242187,-0.8984375){$\theta$}
+%\end{pspicture} 
+%}
+%}\end{minipage}
+\begin{minipage}{5 cm}
+\includegraphics[scale=0.6]{fuerza-proton}
+\end{minipage}
+
+%ejercicio
+\begin{minipage}{13 cm}{
+\item Un arco de corriente se coloca en un campo $\vec{B}=B_{0}$ $\hat{j}$ uniforme. ¿Cuál es la fuerza que ejerce el campo sobre el semicírculo que transporta una corriente $I$ constante?
+\begin{displaymath}
+\vec{F}=-2IBR \hat{k}
+\end{displaymath}
+}\end{minipage}
+%\begin{minipage}{6 cm}{
+%% Generated with LaTeXDraw 2.0.5
+%% Tue May 10 19:04:35 COT 2011
+%% \usepackage[usenames,dvipsnames]{pstricks}
+%% \usepackage{epsfig}
+%% \usepackage{pst-grad} % For gradients
+%% \usepackage{pst-plot} % For axes
+%\scalebox{0.8} % Change this value to rescale the drawing.
+%{
+%\begin{pspicture}(0,-3.0659375)(7.10125,3.0659375)
+%\psarc[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.71,0.1990625){2.21}{5.659482}{172.16447}
+%\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,0.5290625)(6.92,0.5290625)
+%\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{<-}(3.72,2.7090626)(3.76,-2.0509374)
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(5.9,0.5090625)(5.94,-2.2309375)
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.52,0.5090625)(1.54,-2.1709375)
+%\usefont{T1}{ptm}{m}{n}
+%\rput(3.7757812,2.9390626){y}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(6.9554687,0.5190625){x}
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.36,-2.2109375)(3.36,-1.4509375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.16,-2.2109375)(2.16,-1.4509375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.84,-2.2509375)(2.84,-1.4909375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.14,-2.2309375)(4.14,-1.4709375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.68,-2.2509375)(4.68,-1.4909375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(5.3,-2.2509375)(5.3,-1.4909375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(6.2,-2.2109375)(6.2,-1.4509375)
+%\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.16,-2.2909374)(1.16,-1.5309376)
+%\usefont{T1}{ptm}{m}{n}
+%\rput(4.8145313,-1.2409375){$\hat{B}$}
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.52,-2.3109374)(1.54,-2.6709375)
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(5.94,-2.2909374)(5.96,-2.6509376)
+%\usefont{T1}{ptm}{m}{n}
+%\rput(5.974531,-2.8209374){$\infty$}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(1.5545312,-2.8409376){$\infty$}
+%\psline[linewidth=0.04cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.4]{->}(3.74,0.5290625)(5.48,1.4890625)
+%\psarc[linewidth=0.04](4.05,0.6590625){0.21}{324.8658}{34.11447}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(4.554531,0.7790625){$\theta$}
+%\usefont{T1}{ptm}{m}{n}
+%\rput(4.8021874,1.4590626){R}
+%\end{pspicture} 
+%}
+%
+%}\end{minipage}
+\begin{minipage}{5 cm}
+\includegraphics[scale=0.5]{fuerza-arco}
+\end{minipage}
+
+%ejercicio
+\item Demuestre que la fuerza magnética debida a un campo magnético externo $B_{ext}$ constante sobre una espira cerrada es cero. ¿Qué pasa si $\vec{B}$ no es constante? ¿ésto implica que el torque sobre la espira es cero?
+
+%ejercicio
+\begin{minipage}{12 cm}{
+\item Una barra conductora es sostenida por dos alambres tal como se muestra en la figura. La barra tiene una masa por unidad de longitud de $0.040$ $Kg/m$. ¿Qué corriente debe existir en el conductor para que la tensión que soporta la barra sea cero cuando un campo magnético de $3.6$ $T$ entra a la página?, ¿cuál es la dirección requerida para la corriente?
+}\end{minipage}
+\begin{minipage}{6 cm}{
+\includegraphics[scale=0.6]{grafica7}
+}\end{minipage}
+
+%ejercico
+\begin{minipage}{12 cm}{
+\item La espira de $N=100$ vueltas de la figura puede rotar alrededor del eje $y$. ¿Cuál es la magnitud del torque ejercido por un campo magnético $B=0.8$ $T$ dirigido a lo largo del eje $x$ cuando la corriente es $I=1.20$ $A$ en la dirección mostrada en la figura? ¿Cuál es la dirección de rotación de la espira? ¿Qué pasa si invertimos la dirección del campo y la dirección de la corriente $I$? ¿cambia el torque? ¿Cuál es el momento de dipolo de la espira?
+}\end{minipage}
+\begin{minipage}{6 cm}{
+\includegraphics[scale=0.4]{grafica3}
+}\end{minipage}
+
+%ejercicio
+\begin{minipage}{13 cm}{
+\item Un protón se mueve en una órbita circular de $14$ $cm$ de radio en un campo magnético uniforme de $0.35$ $T$ perpendicular a la velocidad del protón. 
+\begin{enumerate}
+\item Determine la rapidez lineal del protón.
+\item Si un electrón se mueve perpendicular al mismo campo a esta misma rapidez lineal, ¿cuál es el radio de su órbita circular? 
+\item ¿Ambos giran en el mismo sentido? 
+%? (4.7 x10^6 m/s , 7.6 x10^-5 m)
+\end{enumerate}
+}\end{minipage}
+\begin{minipage}{5 cm}
+\includegraphics[scale=0.5]{grafica6}
+\end{minipage}
+
+
+%ejercico
+\item Un electrón se  mueve con una rapidez de $10$ $m/s$ en una región donde existe un campo magnético $\vec{B}$ perpendicular a su velocidad. Calcule (deduzca las ecuaciones pertinentes):
+\begin{enumerate}
+\item La intensidad del campo $\vec{B}$ si el electrón describe una trayectoria circular de radio $r=0.10$ $m$.
+\item La velocidad angular $\omega$ del electrón.
+\item el periodo $T$ de rotación del electrón.
+\end{enumerate}
+Ayuda:Use $m_{e}=9.109 \times 10^{-31}$ $kg$  y  $|e|=1.609 \times 10^{-19}$ $C$.
+
+%ejercico
+\item A \textbf{mass spectrometer} separates ions according to their mass-to-charge ratio. In one version of this device, known as the \textit{Bainbridge mass spectrometer}, a beam of ions first passes through a velocity selector and then enters a second uniform magnetic field $B_{0}$ that has the same direction as the magnetic field in the selector. Upon entering the second magnetic field, the ions move in a semicircle of radius $r$ before striking a detector array at $P$. If the ions are positively charged, the beam deflects upward, as figure shows. If the ions are negatively charged, the beam deflects downward.
+\begin{minipage}{9 cm}{
+Show that we can determine the ratio $m/q$ by measuring the radius of curvature and knowing the fields magnitudes $B$ , $B_{0}$ and $E$. Show that:
+\begin{displaymath}
+\boxed{
+v=\dfrac{E}{B}\hspace{0.5 cm}  $and$ \hspace{0.5 cm} \dfrac{m}{q}=\dfrac{rB_{0}}{v} \hspace{0.5 cm}\rightarrow \hspace{0.5 cm} \dfrac{m}{q}=\dfrac{rB_{0} B}{E}
+}
+\end{displaymath}
+}\end{minipage}
+\begin{minipage}{6 cm}{
+\includegraphics[scale=0.5]{grafica4}
+}\end{minipage}
+
+\item Demostrar que $S=2\pi (m/qB) v \cos\theta$ es la separación entre las espirales que describe una partícula de carga $q$ y masa $m$ al entrar a una región en la cual hay un campo magnético $B$ constante que forma un ángulo  $\theta$ con la dirección de la velocidad.\\
+
+BIOT SAVART \\
+
+\begin{minipage}{8 cm}
+\item Calcule el campo magnético para un alambre infinito recto que transporta una corriente $I$ constante.
+\begin{displaymath}
+\vec{B}=\dfrac{\mu_{0}I}{2\pi r}\hat{\phi}
+\end{displaymath}
+\end{minipage}
+\begin{minipage}{8 cm}
+\includegraphics[scale=0.5]{grafica5}
+\end{minipage}
+
+%ejercicio
+\begin{minipage}{11 cm}
+\item Considere un alambre recto finito delgado que transporta una corriente $I$ constante. Calcule el campo magnético $\vec{B}$ en un  $P$ arbitrario localizada a una distancia $a$ del alambre (el punto $P$ no está por encima de la mitad del alambre).
+\begin{displaymath}
+B=\dfrac{\mu_{0}I}{4\pi a} (\cos\theta_{1} -\cos\theta_{2})
+\end{displaymath}
+Note que cuando se tiene un alambre infinito ( $\theta_{1} \rightarrow 0$ y $\theta_{2} \rightarrow \pi$) se obtiene el resultado anterior.
+\end{minipage}
+\begin{minipage}{5 cm}
+\includegraphics[scale=0.6]{grafica9}
+\end{minipage}
+
+%ejercicio
+\begin{minipage}{9 cm}
+\item Calcule el campo magnético de un espira circular de corriente $I$ constante en el punto $P$ mostrado en la figura.
+\begin{displaymath}
+\vec{B}=\dfrac{\mu_{0}I}{2} \frac{R^2}{(R^2 +x^2 )^{3/2} } \hat{i}
+\end{displaymath}
+\end{minipage}
+\begin{minipage}{7 cm}
+\includegraphics[scale=0.5]{grafica10}
+\end{minipage}
+
+
+%ejercicio
+\begin{minipage}{12 cm}
+\item Calcule el campo magnético $B$ en el punto $O$ para el segmento de alambre portador de corriente que se muestra en la figura. El alambre consiste de dos porciones rectas y un arco circular de radio $R$
+\begin{displaymath}
+B=\dfrac{\mu_{0} I}{4\pi R}\theta
+\end{displaymath}
+Compare con el ejercicio anterior. 
+\end{minipage}
+\begin{minipage}{5 cm}
+\includegraphics[scale=0.5]{grafica8}
+\end{minipage}
+
+\item Calcule el campo magnético en el interior de un solenoide (punto $(0,0,0)$). Suponga que el solenoide tiene $N$ vueltas de alambre, por las cuales circula una corriente $I$ y que tiene un radio $R$ y un largo $l$.
+\begin{displaymath}
+B=\dfrac{\mu_{0} N I} {\sqrt{l^2 +R^2}}
+\end{displaymath}
+Muestre que para $l>>R$
+\begin{displaymath}
+B=\mu_{0} n I
+\end{displaymath}
+Donde $n=N/l$. Note que este resultado puede obtenerse directamente de la \textit{Ley de Ampere}.\\
+
+FUERZA ENTRE CORRIENTES \\
+
+\item Calcule la fuerza entre dos alambres largos de longitudes $l_{1}$ y $l_{2}$ que trasportan corrientes $I_{1}$ e $I_{2}$ respectivamente. Suponga que la separación entre los dos alambres es $r$ y que las corrientes son paralelas. ¿Las corrientes se atraen o se repelen? ¿Cómo cambia la situación cuando las corrientes son antiparalelas? Solución:
+\begin{displaymath}
+|\vec{F}_{12}|=\dfrac{\mu_{0} I_{1}I_{2}}{2\pi r} l_{2} ,
+\end{displaymath}
+donde $|\vec{F}_{12}|$ es la magnitud de la fuerza que siente el alambre de longitud $l_{2}$ debido al campo creado por el alambre  de longitud $l_{1}$. ¿El alambre $l_{2}$ siente fuerza debido a su propio campo?
+
+\item Calcule la fuerza magnética entre dos alambres perpendiculares largos.
+
+%ejercicio
+\begin{minipage}{12 cm}
+\item Calcule la fuerza magnética que siente la espira de la figura debida al campo magnético creado por el alambre largo. Respuesta:
+\begin{displaymath}
+|F|=\dfrac{\mu_{0}I_{1}I_{2}l}{2\pi}\Big(\dfrac{1}{a} - \dfrac{1}{a+b}\Big) ,
+\end{displaymath}
+donde $l$ es la altura de la espira. ¿Es dicha fuerza atractiva? ¿depende de las orientación de la corriente $I_{2}$?.
+\end{minipage}
+\begin{minipage}{8 cm}
+\includegraphics[scale=0.4]{grafica11}
+\end{minipage}
+
+\end{enumerate}
+\end{document}

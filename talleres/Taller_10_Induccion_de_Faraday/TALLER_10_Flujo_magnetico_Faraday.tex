@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+
+\usepackage{epsfig}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[reqno]{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\usepackage[usenames,dvipsnames]{pstricks}
+%\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+
+\topmargin -2.5 cm
+\oddsidemargin -1.5 cm
+\textheight 25.0 cm
+\textwidth 18.5cm
+
+\newcommand{\abre}{\textquestiondown}
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+%\twocolumn[
+
+%\begin{minipage}{5 cm}{\begin{center}
+%\includegraphics[scale=0.7]{escudo}\end{center}}\end{minipage}
+%\begin{minipage}{11 cm}{
+%\begin{flushleft}\vspace*{0.2cm} \textbf{Universidad de Antioquia}\\[2mm] 
+%Facultad de Ciencias Exactas y Naturales\\[2mm] 
+%Instituto de Física\\[2mm] 
+Física de campos. TALLER 10 - \textbf{Flujo magnético e inducción de Faraday} 
+%\end{flushleft}
+%}
+%\end{minipage}
+
+
+\hrulefill
+\footnote{Algunas de las figuras son tomadas del texto: \textit{Physics For Scientists And Engineers 6E By Serway And Jewett}} 
+
+\vspace{0.5cm}
+%]
+
+
+
+
+
+
+
+
+
+{\color{red}FLUJO MAGNÉTICO Y LEY DE INDUCCIÓN DE FARADAY}
+\vspace{0.6 cm}
+
+\begin{enumerate}
+
+%ejercicio
+\item Calcule el flujo magnético a través de la espira rectangular mostrada en la figura.
+
+\begin{minipage}{5 cm}{
+\includegraphics[scale=0.6]{espira}
+}
+\end{minipage}
+\begin{minipage}{12 cm}{
+\begin{displaymath}
+\Phi_B=\dfrac{\mu_0 I b}{2\pi} \ln \bigg(1+ \dfrac{a}{c} \bigg)
+\end{displaymath}
+
+%ejercicio
+\begin{enumerate}
+\item Si la corriente $I$ varía de la forma $I= c t^2$, donde $c$ es una constante positiva, ¿cuál es la $fem$ inducida en la espira.
+
+\item Suponga que la espira tiene una resistencia interna $R$. Calcule la corriente inducida $I_i$ en la espira. ¿Hacia donde circula dicha corriente?
+\end{enumerate}
+}
+\end{minipage}
+
+%ejercicio
+\item Una barra desliza sin fricción debido a una fuerza externa $\vec{F}$ tal como se muestra en la figura. Si se tiene una resistencia $R=6 \Omega$, una longitud $l=1.2$ m y un campo magnético $B=2.5$ T entrando a la hoja:
+
+\begin{minipage}{6 cm}{
+\includegraphics[scale=0.8]{barra}
+}
+\end{minipage}
+\begin{minipage}{11 cm}{
+\begin{enumerate}
+\item ¿A qué rapidez deberá moverse la barra para producir una corriente  $I=0.5$ A en el resistor?
+\item Calcular la fuerza requerida para mover la barra hacia la derecha con una rapidez constante de $2.0$ m/s.
+\item ¿Cuál es la energía disipada por unidad de tiempo en el resistor?, es decir, calcule la potencia entregada al resistor.
+\end{enumerate}  
+}
+\end{minipage}
+
+%ejercicio
+\item Una varilla horizontal del masa $m$ y longitud $l$ puede deslizarse sin fricción bajo la acción de la gravedad sobre los rieles verticales como se indica en la figura. Suponga que toda la resistencia $R$ del circuito está concentrada en el extremo inferior. La estructura está inmersa en un campo magnético $\vec{B}=-B\hat{k}$ uniforme que se dirige hacia dentro de la página.
+
+\begin{minipage}{5.5 cm}{
+\includegraphics[scale=1.0]{barra2}
+}
+\end{minipage}
+\begin{minipage}{12 cm}{
+\begin{enumerate}
+\item Halle la $fem$ inducida en el circuito en función de la velocidad de caída de la barra.
+\item Halle la corriente inducida en el circuito. ¿Cuál es su dirección? Justifique y dibújela en el gráfico dado.
+\item Halle la fuerza magnética que siente la varilla debida al campo $\vec{B}$ y escriba la ecuación de movimiento para la varilla.
+\item Halle la velocidad límite $v_{L}$ de dicha varilla (suponga que los rieles son lo suficientemente largos para tener un velocidad límite $v_{L}$).
+\end{enumerate}
+}
+\end{minipage}
+
+
+%ejercicio
+\item Una barra de masa $m=0.5$ kg está atada a una masa $M$ tal como se muestra en la figura. Suponga que la barra se desplaza por dos rieles sin fricción, separados una distancia $l=1.2$ m y de resistencia $R=6.0$ $\Omega$. Suponga además que se tiene un campo magnético $B=2.5$ $T$ perpendicular al sistema de los dos rieles.
+
+\begin{minipage}{6 cm}
+\includegraphics[scale=0.4]{grafica2}
+\end{minipage} 
+\begin{minipage}{11 cm}
+\begin{enumerate}
+\item Calcule la corriente inducida $I_{i}$ en el resistor $R$ en función de la velocidad de la barra y de las cantidades dadas (no reemplace los valores numéricos). ¿Cuál es la dirección de dicha corriente? Justifique su respuesta y dibújela en la figura dada.
+\begin{align*}
+I_i=\dfrac{Blv}{R}
+\end{align*}
+\item Determinar la velocidad de la barra como función del tiempo.
+\begin{align*}
+v(t)=\dfrac{MgR}{(Bl)^2}\left(1-\exp^{-\dfrac{(Bl)^2 t}{R(m+M)}}\right)
+\end{align*}
+\item ¿Cuál debe ser la masa $M$ para que la barra se mueva con una rapidez constante de $2.0$ m/s?
+\begin{align*}
+M\approx 0.306\, \text{kg}
+\end{align*}
+\item ¿Con qué rapidez se le entrega energía al resistor $R$?
+\end{enumerate}
+\end{minipage}
+
+
+
+%ejercicio
+\item Una barra de masa $m$ desliza por un plano inclinado sin fricción que forma un ángulo $\theta$ con la horizontal. La barra es de longitud $L$, tiene una resistencia interna $R$ y está inmersa en un campo magnético $\vec{B}$ uniforme, tal como se muestra en la figura. Determinar la velocidad de la barra como función del tiempo.
+
+\begin{minipage}{6 cm}
+\includegraphics[scale=0.6]{barra-a-angulo}%My plot
+\end{minipage} 
+\begin{minipage}{11 cm}
+\begin{align*}
+v(t)=\dfrac{mgR\sin\theta}{(Bl)^2\cos\theta^2}\left(1-\exp^{-\dfrac{(Bl)^2\cos\theta^2 t}{R\,m}}\right)
+\end{align*}
+\end{minipage}
+
+
+
+
+%ejercicio
+\begin{minipage}{12 cm}{
+\item Un alambre recto conductor de longitud $l$ gira con velocidad angular $\omega$ constante alrededor de un pivote en un extremo. El alambre está en una región donde se tiene un campo magnético uniforme y constante. ¿Cuál es la fuerza electromotriz inducida en los extremos del conductor?
+\begin{displaymath}
+|\Delta V|=\dfrac{1}{2}\omega B l^2
+\end{displaymath}
+}
+\end{minipage}
+\begin{minipage}{5 cm}{
+\includegraphics[scale=0.45]{barrarotante}
+}
+\end{minipage}
+
+%ejercicio
+\item (Generador eléctrico) Una espira cuadrada de lado $l$ está rotando con una rapidez angular $\omega$ en un campo magnético que varía con el tiempo de la forma $B=B_0\sin(\omega t)$ en una dirección fija perpendicular al eje de rotación de la espira. Suponga que el ángulo entre el vector $\vec{B}$ y el vector normal a la espira $\hat{n}$ es $\theta$. Además suponga que el campo magnético es paralelo al plano $xy$ y la espira está rotando de $x$ a $y$. Calcule:
+
+\begin{minipage}{5 cm}{
+\includegraphics[scale=0.55]{espira-induccion}
+}
+\end{minipage}
+\begin{minipage}{10 cm}{
+
+\begin{enumerate}
+\item El flujo eléctrico a través de la espira.
+\item La $fem$ inducida en la espira.
+\end{enumerate}
+
+\begin{displaymath}
+\Phi_B=l^2 B_0 \sin(\omega t)\cos(\omega t)
+\end{displaymath}
+\begin{displaymath}
+|fem|=|\Delta V|=|l^2B_0 \omega\cos(2\omega t)|
+\end{displaymath}
+}
+\end{minipage}
+
+
+%ejercicio
+\item Una espira rectangular conductora de masa $M$, resistencia $R$ y dimensiones $w$, $l$, cae desde el reposo dentro de un campo magnético $\vec{B}$ que se extiende infinitamente hacia abajo, tal como se muestra en la figura. Mientras el borde inferior de la espira se encuentra dentro del campo magnético, la espira se moverá a una velocidad $v_T$ constante.
+
+\begin{minipage}{5 cm}
+\includegraphics[scale=0.3]{espira-cuadrada}
+\end{minipage}
+\begin{minipage}{12 cm}
+\begin{enumerate}
+\item Encuentre y justifique el sentido de la corriente inducida en la espira y la fuerza magnética que experimenta a medida que cae dentro del campo $\vec{B}$.
+\begin{align*}
+\vec{F}=IB\omega \hat{j}
+\end{align*}
+\item  Calcule el flujo de campo a través de la espira, la $fem$ y la corriente inducida.
+\begin{align*}
+\Phi= B\omega y \hspace{1.0 cm} \xi=-B\omega v_y \hspace{1.0 cm} I=\dfrac{B\omega v_y}{R}
+\end{align*}
+\item Determine la velocidad terminal (velocidad límite) $v_T$.
+\begin{align*}
+v_L=\dfrac{MgR}{(B\omega)^2}
+\end{align*}
+\end{enumerate} 
+\end{minipage}
+
+
+%ejercicio
+\begin{minipage}{13 cm}
+\item Un anillo de aluminio de radio $a=5.00$ cm y con resistencia interna $R=3 \times 10^{-4}\Omega$ es coaxial con un un solenoide muy largo de $1000$ vueltas por cada metro y radio $b=3.00$ cm, tal como se muestra en la figura. La corriente en el solenoide es \\ $I=540 +270 t$. Suponga que el solenoide produce un campo magnético despreciable en el exterior y desprecie los efectos de borde. 
+\begin{enumerate}
+\item Use la ley de Ampere para hallar el campo magnético en el interior del solenoide en función del tiempo.
+\item Determine la $fem$ y el campo eléctrico inducido ($\vec{E_i}$) para $r>b$. ¿Cuál es la corriente inducida ($I_i$) en el anillo?. Dibújela su dirección en el anillo.
+\item Considere únicamente el solenoide y calcule su inductancia (L) y la energía magnética ($U_B$) almacenada  en un tiempo $t=2$ s.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{6 cm}
+\includegraphics[scale=0.5]{cilindro-anillo}
+\end{minipage}
+
+
+
+\end{enumerate}
+\end{document}

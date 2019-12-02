@@ -1,22 +1,22 @@
-%\documentclass[letterpaper,12pt]{book}
-%\usepackage[spanish]{babel}
-%\usepackage{graphicx, color}
-%\usepackage{amsmath}
-%\usepackage{amscd}
-%\usepackage{titlesec}
-%\usepackage[latin1]{inputenc}
-%\usepackage{listings}
-%\usepackage{multicol}
-%\usepackage{enumerate}
-%\usepackage{amssymb}
-%\usepackage{amsthm}
-%\usepackage{syntonly}
-%\usepackage{fancyhdr}
-%\usepackage{verbatim}
-%\usepackage{fancyvrb}
-%\usepackage{hyperref}
-%
-%\begin{document}
+\documentclass[letterpaper,12pt]{book}
+\usepackage[spanish]{babel}
+\usepackage{graphicx, color}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{titlesec}
+\usepackage[latin1]{inputenc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{syntonly}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+
+\begin{document}
 
 %%%++++++++++++++++++++++++++++++++++++
 
@@ -54,7 +54,7 @@ Dichas leyes establecidas por Kepler fueron empíricas y su soporte y explicación
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.4]{gravitacion/ley1}[h]
+\includegraphics[scale=0.4]{ley1}[h]
 \end{center}
 \label{ley1}
 \caption{Primera ley de Kepler}
@@ -67,13 +67,13 @@ Cabe anotar que dicha ley es un resultado de las estructura funcional de la fuer
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.4]{gravitacion/ley2}
+\includegraphics[scale=0.4]{ley2}
 \end{center}
 \caption{Segunda ley de Kepler}
 \label{ley2}
 \end{figure}
 
-Kepler obtuvo dicha ley estudiando detenidamente los datos obtenido en las observaciones astronómicas de Tycho. En la figura \ref{ley2} podemos ver que el área barrida en un tiempo $t$ fijo, siempre es $A$. 
+Kepler obtuvo dicha ley estudiando detenidamente los datos obtenido en las observaciones astronómicas de Tycho. En la Fig.~\ref{ley2} podemos ver que el área barrida en un tiempo $t$ fijo, siempre es $A$. 
 
 Veamos las primeras implicaciones de esta ley:
 %Consideremos un diferencial de área $dA$
@@ -118,13 +118,13 @@ Para dos puntos $1$ y $2$ sobre la trayectoria elíptica de cada planeta, se tien
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.8]{gravitacion/perihelio}
+\includegraphics[scale=0.8]{perihelio}
 \end{center}
 \label{elipse}
 \caption{Movimiento elíptico de los planetas}
 \end{figure}
 
-En el caso particular del perihelio y el afelio \ref{elipse} :
+En el caso particular del perihelio y el afelio~\ref{elipse} :
 
 \begin{equation}
 |\vec{r}_1 \times \vec{v}_1 |=|\vec{r}_2 \times \vec{v}_2 |\Rightarrow v_1r_1 =v_2r_2 \Rightarrow 
@@ -137,7 +137,7 @@ Resumimos esta ley, afirmando que es una consecuencia directa de la conservación
 
 \item \textbf{LEY $3$:} El cuadrado del periodo orbital $P$ de cualquier planeta es proporcional al cubo del semieje mayor $a$ de la órbita elíptica.
 
-De acuerdo a la figura \ref{elipse}:
+De acuerdo a la Fig.~\ref{elipse}:
 
 \begin{equation}
 P^2= k a^3 ,
@@ -164,7 +164,7 @@ En $1688$ Isaac Newton logró establecer con ayuda de las leyes de Kepler, la ley
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{gravitacion/fuerzagravitacional}
+\includegraphics[scale=0.9]{fuerzagravitacional}
 \end{center}
 \label{fuerzagravitacional}
 \caption{Fuerza de interacción gravitacional}
@@ -196,12 +196,12 @@ donde $G$ es conocida como la constante gravitacional; $G=6.673 \times 10^{-11}$
 %%%%%%%%%%%%%%%%%%%%%%%%% EJEMPLO 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{0.5 cm}
 %ejercicio2
-\item Dos estrellas de masas $m$ y $M$ separadas por una distancia $d$, giran en  órbita circular alrededor de su centro de masa CM, tal como se muestra en la parte izquierda de la Figura~\ref{fig:sistema-binario-Mm}. 
+\item Dos estrellas de masas $m$ y $M$ separadas por una distancia $d$, giran en  órbita circular alrededor de su centro de masa CM, tal como se muestra en la parte izquierda de la Fig.~\ref{fig:sistema-binario-Mm}. 
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{gravitacion/sistema-binario-Mm}\hspace{1.0 cm}
-\includegraphics[scale=0.6]{gravitacion/sistema-binario-mm}
+\includegraphics[scale=0.6]{sistema-binario-Mm}\hspace{1.0 cm}
+\includegraphics[scale=0.6]{sistema-binario-mm}
 \end{center}
 \caption{Sistema binario de estrellas en órbitas circulares con distintas e iguales masa.}
 \label{fig:sistema-binario-Mm}
@@ -210,9 +210,9 @@ donde $G$ es conocida como la constante gravitacional; $G=6.673 \times 10^{-11}$
 \begin{enumerate}
 \item Determinar el periodo de cada estrella.
 \item Suponga que $M\gg m$. En este caso, se puede asumir que la masa $M$ está en el centro de masa del sistema. 
-¿Cuál es el periodo en este caso? ¿es compatible con la tercera Ley de Kepler para el movimiento elíptico con excentricidad 0 (órbita circular)?
+¿Cuál es el periodo en este caso? ¿Es compatible con la tercera Ley de Kepler para el movimiento elíptico con excentricidad 0 (órbita circular)?
 %
-\item El sistema binario Plaskett consiste de dos estrellas de masas iguales girando en torno a su centro de masa CM, tal como se muestra en la parte derecha de la Figura~\ref{fig:sistema-binario-Mm}. 
+\item El sistema binario Plaskett consiste de dos estrellas de masas iguales girando en torno a su centro de masa CM, tal como se muestra en la parte derecha de la Fig.~\ref{fig:sistema-binario-Mm}. 
 La rapidez de cada estrella es aproximadamente $v = 300$ km/s y el periodo orbital es de $14,396$ días~\url{https://en.wikipedia.org/wiki/Plaskett%27s_Star}. 
 Use el resultado del primer literal para determinar la masa $m$ de cada estrella.
 \end{enumerate}
@@ -244,28 +244,28 @@ Análogamente, la fuerza central que experimenta la masa $m$ debido a su interacc
 F=\,& m\dfrac{v_1^2}{r_1}=m\omega^2r_1\,.
 \end{align}
 %
-Ahora, si multiplicamos la ecuación~\ref{ec2:LGU-eje2} la masa $m$ y la ecuación~\ref{ec3:LGU-eje2} la masa $M$ y las sumamos, tenemos la siguiente ecuación:
+Ahora, si multiplicamos la ec.~\eqref{ec2:LGU-eje2} la masa $m$ y la ec.~\eqref{ec3:LGU-eje2} la masa $M$ y las sumamos, tenemos la siguiente ecuación:
 %
 \begin{align}
 \label{ec4:LGU-eje2}
 F(m + M) =\,& \omega^2Mm\left(r_1+r_2\right)\,.
 \end{align}
 %
-Despejando la fuerza $F$ de la ecuación~\ref{ec1:LGU-eje2} y reemplazando en la ecuación~\ref{ec4:LGU-eje2}, tenemos que:
+Despejando la fuerza $F$ de la ec.~\eqref{ec1:LGU-eje2} y reemplazando en la ec.~\eqref{ec4:LGU-eje2}, tenemos que:
 %
 \begin{align}
 \label{ec5:LGU-eje2}
 G\dfrac{Mm}{d^2}(m+M)=\,&\omega^2Mm\left(r_1+r_2\right)\,.
 \end{align}
 %
-Finalmente, usamos la definición del periodo en un movimiento circular uniforme $P=\dfrac{2\pi}{\omega}$ y la relación $r_1+r_2=d$ mostrada en la Figura~\ref{fig:sistema-binario-Mm}, para concluir que:
+Finalmente, usamos la definición del periodo en un movimiento circular uniforme $P=\dfrac{2\pi}{\omega}$ y la relación $r_1+r_2=d$ mostrada en la Fig.~\ref{fig:sistema-binario-Mm}, para concluir que:
 %
 \begin{align}
 \label{ec6:LGU-eje2}
 P^2=\,&\dfrac{4\pi^2}{G(m+M)}d^3\,.
 \end{align}
 
-\item Si asumimos que $M\gg m$ en la ecuación~\ref{ec5:LGU-eje2}, entonces:
+\item Si asumimos que $M\gg m$ en la ec.~\eqref{ec5:LGU-eje2}, entonces:
 %
 \begin{align}
 \label{ec7:LGU-eje2}
@@ -273,7 +273,7 @@ P^2~\approx\,&\dfrac{4\pi^2}{GM}d^3\,,
 \end{align}
 es decir, obtenemos la tercera ley de Kepler para el caso de un movimiento circular. Recordemos que esta ley fue originalmente deducida para el sistema planetario en el cual la masa del sol es mucho mayor que la masa de los planetas, y en este contexto la aproximación $M\gg m$ es completamente válida. De igual forma, es importante aclarar, que las órbitas planetarias realmente son elípticas en las cuales la distancia $d$ debe ser interpretada como el semieje mayor de la elipse (parámetro comúnmente llamado $a$). Por lo tanto, podemos afirmar que este resultado es compatible con la tercera ley de Kepler.
 
-\item Usando la ecuación~\ref{ec6:LGU-eje2} con $M=m$, tenemos que:
+\item Usando la ec.~\eqref{ec6:LGU-eje2} con $M=m$, tenemos que:
 %
 \begin{align}
 \label{ec8:LGU-eje2}
@@ -304,12 +304,12 @@ es decir, alrededor de cien veces la masa del sol ($M_{\odot}\approx 1.988 \time
 \item Suponga que un satélite de masa $m=2000$ kg está en órbita elíptica alrededor de la tierra.
 En el perigeo (punto de mayor cercanía a la tierra) tiene una altitud de 1100 km y en el apogeo (punto de mayor lejanía a la tierra) tiene una altura de 4100 km. 
 Suponga que se quiere transferir el satélite desde la órbita elíptica a la órbita circular 
-cambiando su velocidad en el perigeo, tal como se muestra en la Figura~\ref{fig:cambio-orbita}. 
+cambiando su velocidad en el perigeo, tal como se muestra en la Fig.~\ref{fig:cambio-orbita}. 
 Asuma que el radio terrestre es $R\approx 6400$ km. 
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{gravitacion/cambio-de-orbita}
+\includegraphics[scale=0.8]{cambio-de-orbita}
 \end{center}
 \caption{Cambio de órbita de un satélite.}
 \label{fig:cambio-orbita}
@@ -346,7 +346,7 @@ donde $g=9.8\; \text{m}/\text{s}^2$ es la aceleración de la gravedad sobre la su
 E_1=\;& -9.8\; \text{m}/\text{s}^2 \left(\dfrac{2\times 10^3 \text{kg}\times (6400\times 10^3 \text{m})^2}{\left(1100+4100+2(6400)\right)\times 10^3 \text{m}}\right)\approx -4.46 \times 10^{10} \text{J}\,.
 \end{align}
 %
-Análogamente, en la órbita circular, la energía mecánica también está dada por la ecuación~\ref{ec1:eje3}, donde ahora el semieje mayor de la órbita debe ser interpretado como la distancia que hay al perigeo, es decir:
+Análogamente, en la órbita circular, la energía mecánica también está dada por la ec.~\eqref{ec1:eje3}, donde ahora el semieje mayor de la órbita debe ser interpretado como la distancia que hay al perigeo, es decir:
 %
 \begin{align}
 \label{ec4:eje3}
@@ -388,7 +388,7 @@ Finalmente, podemos concluir que el cambio en la rapidez está dado por:
 \Delta v =&\; (v_2-v_1)=\sqrt{\dfrac{2}{m}}\left[\sqrt{\left(E_1+g\dfrac{mR^2}{r_{\text{min}}}\right)}-\sqrt{\left(E_2+g\dfrac{mR^2}{r_{\text{min}}}\right)}\right]\approx -584.784\; \text{m/s} \,,
 \end{align}
 %
-donde tuvimos en cuenta que la rapidez $v_2$ tiene la misma estructura de la ecuación~\ref{ec8:eje3} cambiando $E_1$ por la energía $E_2$. De este resultado se puede concluir que el satélite debe disminuir su velocidad para poder pasar desde la órbita elíptica a a la órbita circular.
+donde tuvimos en cuenta que la rapidez $v_2$ tiene la misma estructura de la ec.~\eqref{ec8:eje3} cambiando $E_1$ por la energía $E_2$. De este resultado se puede concluir que el satélite debe disminuir su velocidad para poder pasar desde la órbita elíptica a a la órbita circular.
 
 \item El momento angular en ambas órbitas es respectivamente:
 \begin{align}
@@ -455,7 +455,7 @@ Supongamos que tenemos una masa puntual $m$ y a diferentes posiciones de $m$ pon
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{gravitacion/campo}
+\includegraphics[scale=0.8]{campo}
 \label{campo}
 \end{center}
 \caption{Campo gravitacional generado por una masa puntual $m$}
@@ -469,18 +469,18 @@ El campo gravitacional en un punto $P$ producido por la masa $m$ es definido com
 }
 \end{equation}     
 
-Para el caso general de una distribución de masa volumétrica (Figura \ref{fig_distribucion_continuo} ), superficial o lineal; el campo gravitacional se calcula con la siguiente expresión:
+Para el caso general de una distribución de masa volumétrica (Fig.~\ref{fig_distribucion_continuo} ), superficial o lineal; el campo gravitacional se calcula con la siguiente expresión:
 
 \begin{equation}
 \boxed{\vec{g}_p(r)=-G\int_M \dfrac{dm}{r^2}\hat{u}_r} ,
 \label{ecucampogcontinuo}
 \end{equation} 
 
-donde la integral debe hacerse sobre todo el cuerpo de masa $M$. Note que que el la ecuación anterior, el vector unitario $\hat{u}_r$ y la magnitud $r$ son variables al igual que $dm$, tal como se muestra en la Figura \ref{fig_distribucion_continuo}. 
+donde la integral debe hacerse sobre todo el cuerpo de masa $M$. Note que que el la ecuación anterior, el vector unitario $\hat{u}_r$ y la magnitud $r$ son variables al igual que $dm$, tal como se muestra en la Fig.~\ref{fig_distribucion_continuo}. 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{gravitacion/figcampogcontinuo}
+\includegraphics[scale=0.9]{figcampogcontinuo}
 \caption{Campo gravitacional generado por una masa  $M$.}
 \label{fig_distribucion_continuo}
 \end{center}
@@ -497,13 +497,13 @@ donde la integral debe hacerse sobre todo el cuerpo de masa $M$. Note que que el
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{gravitacion/energiapotencial}
+\includegraphics[scale=0.9]{energiapotencial}
 \caption{Energía potencial}
 \label{energia potencial}
 \end{center}
 \end{figure}
 
-Dado que la fuerza gracitacional $\vec{F}_g$ es una fuerza central y sólo depende de la distancia $r$ entre las dos masas (Figura \ref{energia potencial} ), entonces $\vec{F}_g$ es una fuerza conservativa y podemos asociarle una función energía potencial gravitacional $E_p(r)$.
+Dado que la fuerza gravitacional $\vec{F}_g$ es una fuerza central y sólo depende de la distancia $r$ entre las dos masas (Fig.~\ref{energia potencial} ), entonces $\vec{F}_g$ es una fuerza conservativa y podemos asociarle una función energía potencial gravitacional $E_p(r)$.
 
 \begin{equation*}
 \vec{F}_g(r)= -G\dfrac{mm'}{r^2}\hat{u}_r = -\vec{\nabla}E_p(r) = - \hat{u}_r \dfrac{\partial}{\partial r} E_p(r) 
@@ -532,7 +532,7 @@ donde $r_{ij}$ es la magnitud del vector posición que va desde la masa $m_i$ has
 \begin{equation}
 U=-G \dfrac{m_1m_2}{r_{12}}=-G \dfrac{m_1m_2}{r}
 \end{equation}
-\item Para tres masas puntuales $m_1$, $m_2$, $m_3$, separadas distancias $r_{12}$, $r_{13}$, $r_{23}$ (ver Figura \ref{figtresmasas} para mayor ilustración):
+\item Para tres masas puntuales $m_1$, $m_2$, $m_3$, separadas distancias $r_{12}$, $r_{13}$, $r_{23}$ (ver Fig.~\ref{figtresmasas} para mayor ilustración):
 \begin{eqnarray}
 \nonumber
 U&=&-G \dfrac{m_1m_2}{r_{12}}-G \dfrac{m_1m_3}{r_{13}}-G \dfrac{m_2m_3}{r_{23}} \\
@@ -540,7 +540,7 @@ U&=&-G \dfrac{m_1m_2}{r_{12}}-G \dfrac{m_1m_3}{r_{13}}-G \dfrac{m_2m_3}{r_{23}} 
 \end{eqnarray}
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.9]{gravitacion/tresmasas}
+\includegraphics[scale=0.9]{tresmasas}
 \end{center}
 \caption{Tres masas puntuales}
 \label{figtresmasas}
@@ -553,11 +553,11 @@ U=-G\bigg(\dfrac{m_1m_2}{r_{12}}+ \dfrac{m_1m_3}{r_{13}}+\dfrac{m_1m_4}{r_{14}}+
 \end{itemize}
 
 \subsection*{Ejemplo \cite{klepner}}
-Un proyectil de masa $m$ es lanzado desde la superficie de la tierra formando un ángulo $\alpha$ con la vertical tal como se muestra en la Figura \ref{fig-tiro}. Si la rapidez inicial del proyectil es $v_0=\sqrt{\dfrac{GM}{R_e}}$, donde $M$ es la masa de la tierra, determinemos la altura máxima alcanzada por el proyectil (\textbf{$r_{max}$}).
+Un proyectil de masa $m$ es lanzado desde la superficie de la tierra formando un ángulo $\alpha$ con la vertical tal como se muestra en la Fig.~\ref{fig-tiro}. Si la rapidez inicial del proyectil es $v_0=\sqrt{\dfrac{GM}{R_e}}$, donde $M$ es la masa de la tierra, determinemos la altura máxima alcanzada por el proyectil (\textbf{$r_{max}$}).
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{gravitacion/tiro}
+\includegraphics[scale=0.3]{tiro}
 \end{center}
 \caption{Altura máxima ($r_{max}$) en un tiro parabólico}
 \label{fig-tiro}
@@ -604,13 +604,13 @@ g(r)=-\dfrac{Gm}{r^2}=-\dfrac{\partial}{\partial r}(-\dfrac{Gm}{r})
 \label{gradienteg}
 \end{equation}
 
-La ecuación anterior es fundamental. El concepto de potencial gravitacional juega un papel muy importante en el cálculo de algunos campos, debido a que es una cantidad escalar, la cual ``casi'' siempre es más fácil de calcular que la cantidad vectorial $\vec{g}$. Una vez calculado $V(r)$ hallamos $\vec{g}$ usando la ecuación \ref{gradienteg}. 
+La ecuación anterior es fundamental. El concepto de potencial gravitacional juega un papel muy importante en el cálculo de algunos campos, debido a que es una cantidad escalar, la cual ``casi'' siempre es más fácil de calcular que la cantidad vectorial $\vec{g}$. Una vez calculado $V(r)$ hallamos $\vec{g}$ usando la ec.~\eqref{gradienteg}. 
 
 Definimos la \textbf{superficie equipontencial} como aquella superficie que rodea a la masa $m$ en la cual $V$ tiene el mismo valor.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{gravitacion/superficie}
+\includegraphics[scale=0.8]{superficie}
 \caption{Superficie equipotenciales de una carga puntual (curva a rayas).}
 \label{superficie-equipotencial}
 \end{center}
@@ -624,11 +624,11 @@ Para el caso de distribuciones continuas de masa, el potencial gravitacional ha 
 
 \subsubsection{Principio de superposición para masas puntuales}
 
-En cualquier campo $P$ (Figura \ref{camposuperposicion} ), el campo debido a un grupo de masas $m_1, m_2, \cdots, m_n$, es igual al vector suma de los campos $\vec{g}_i$ generados por cada una de masas individuales, es decir, el campo en el punto $P$ es la superposición de los campo individuales $\vec{g}_i$:
+En cualquier campo $P$ (Fig.~\ref{camposuperposicion} ), el campo debido a un grupo de masas $m_1, m_2, \cdots, m_n$, es igual al vector suma de los campos $\vec{g}_i$ generados por cada una de masas individuales, es decir, el campo en el punto $P$ es la superposición de los campo individuales $\vec{g}_i$:
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{gravitacion/camposuperposicion}
+\includegraphics[scale=0.7]{camposuperposicion}
 \end{center}
 \caption{Principio de superposición para campos}
 \label{camposuperposicion}
@@ -644,18 +644,120 @@ Análogamente el potencial en el punto $P$ es:
 \begin{equation}
 V=\sum_{i=1}^{n}V_i = \sum_{i=1}^{n} \dfrac{-Gm_i}{r_i}
 \end{equation}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Movimiento general bajo interacción gravitacional}
+
+Consideremos el movimiento de un cuerpo de masa $m$ alrededor de un cuerpo de masa $M>m$ tal como se muestra en la Fig.~\ref{fig:}.
+%
+Según la conservación de la energía mecánica:
+\begin{align}
+\label{eq:E-mecanica}
+E =& \dfrac{1}{2}mv^2 + U(r) = \dfrac{1}{2}m(v_r^2+v_\theta^2) -\dfrac{G m}{r} = \dfrac{1}{2}m\left(\left(\dfrac{dr}{dt}\right)^2+\left(r\dfrac{d\theta}{dt}\right)^2\right) -\dfrac{G m}{r} \nonumber \\
+=& \dfrac{1}{2}m\left(\dfrac{d\theta}{dt}\right)^2 \left(\left(\dfrac{dr}{d\theta}\right)^2+r^2\right) -\dfrac{G m}{r}\,.
+\end{align}
+Por otro lado, usando la definición de momento angular, tenemos:
+\begin{align}
+\label{eq:L}
+\vec{L}=m\,\vec{r}\times\vec{v}=m\,\vec{r}\times(\vec{v_r}+\vec{v_\theta})= m\,\vec{r}\times\vec{v_\theta} \to L = m\,r \left(r\dfrac{d\theta}{dt}\right)\,.
+\end{align}
+Reemplazando la ec.~\eqref{eq:L} en la ec.~\eqref{eq:E-mecanica}:
+\begin{align}
+\label{eq:drdthetat}
+\left(\dfrac{dr}{d\theta}\right)^2 = \dfrac{m^2r^4}{L^2}\left[\dfrac{2E}{m}+\dfrac{2Gm}{r}-\dfrac{L^2}{m^2r^2}\right]\,.
+\end{align}
+%
+Por otro lado en el estudio de la geometría se tiene que la ecuación de las cónicas es:
+\begin{equation}
+\label{eq:conicas}
+\dfrac{\epsilon d}{r} = 1 +\epsilon\cos\theta\,,
+\end{equation}
+donde $\epsilon$ es la excentricidad de la cónica, $d$ es la distancia a la directriz y $r,\theta$ son la coordenadas polares.
+Usando la anterior ecuación se tiene que:
+\begin{equation}
+\label{eq:conica-drdtheta}
+\left(\dfrac{dr}{d\theta}\right)^2=\dfrac{r^4\sin\theta^2}{d^2}\,.
+\end{equation}
+Comparando las ecs.~\eqref{eq:drdthetat} y~\eqref{eq:conica-drdtheta} tenemos que:
+\begin{align}
+\sin\theta^2 =& \dfrac{d^2m^2}{L^2}\left(\dfrac{2E}{m}+\dfrac{2Gm}{r}-\dfrac{L^2}{m^2r^2}\right)=\left(1-\dfrac{d^2}{r^2}+\dfrac{2d}{r\epsilon}-\dfrac{1}{\epsilon^2}\right)\,,
+\end{align} 
+donde usamos la ec.~\eqref{eq:conicas}. Comparando las potencias en la coordenada $r$ tenemos las siguientes dos relaciones: 
+\begin{itemize}
+\item Potencias de $r^0$:
+\begin{equation}
+\label{eq:Energia-general}
+1-\dfrac{1}{\epsilon^2}=\dfrac{2d^2mE}{L^2} \to E=\dfrac{L^2}{2d^2m}\left(1-\dfrac{1}{\epsilon^2}\right)\,.
+\end{equation}
+\item Potencias de $r^{-1}$:
+\begin{equation}
+\label{e:excentricidad}
+\dfrac{2d}{r\epsilon}=\dfrac{2d^2m^2GM}{rL^2} \to \epsilon=\dfrac{L^2}{dm^2GM}\,.
+\end{equation}
+\end{itemize}
+
+Interpretación de las anteriores ecuaciones:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Cónica & Excentricidad & Energía & Momento angular \\
+\hline
+&&&\\
+Elipse & $\epsilon<1$ & $E=-\dfrac{GMm}{2a} < 0$& $L^2=Gm^2Ma(1-\epsilon^2)$\\
+&&&\\
+\hline
+&&&\\ 
+Parábola & $\epsilon=1$ & $E= 0$& $L>0$\\
+&&&\\
+\hline
+&&&\\ 
+Hipérbola & $\epsilon>1$ & $E> 0$& $L>0$\\
+&&&\\
+\hline
+\end{tabular}
+\end{center}
+\end{table} 
+
+Note que el tamaño de la elipse está determinado por la energía, es decir $E\approx -1 /a$, sin embargo, la forma de la elipse está determinado por el momento angular (pudene tenerse muchas órbitas con la misma energía, pero con distinto momento angular). Por ejemplo como se muestra en la Fig.~\ref{fig:}.
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\section{Distribuciones continuas de masa}
+
+
 \subsection{Ejemplos de campo gravitacional}
 
 CAMPO DE UNA BARRA\\
 
 \begin{enumerate}
 
-\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida (Figura \ref{figbarra1}). El campo en el punto $P$ a una distancia $d$ lo largo del eje de la barra está dado por:
+\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida (Fig.~\ref{figbarra1}). El campo en el punto $P$ a una distancia $d$ lo largo del eje de la barra está dado por:
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{gravitacion/barra1}
+\includegraphics[scale=0.8]{barra1}
 \end{center}
 \caption{Campo en el eje de una barra de longitud $l$.}
 \label{figbarra1}
@@ -676,13 +778,13 @@ usando la función densidad lineal de masa:
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{gravitacion/barra2}
+\includegraphics[scale=0.9]{barra2}
 \end{center}
 \caption{Campo en el eje de una barra de longitud $l$.}
 \label{figbarra2}
 \end{figure}
 
-\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida (Figura \ref{figbarra2}). El campo en el punto $P$ está dado por:
+\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida (Fig.~\ref{figbarra2}). El campo en el punto $P$ está dado por:
 
 \begin{eqnarray}
 \nonumber \vec{g} & = & -G\int_M \dfrac{dm}{r^2}\hat{u}_r =-G\int_M \dfrac{dm}{r^2} (-\cos\theta \hat{i} + \sin\theta \hat{j})  \\ \nonumber
@@ -692,11 +794,11 @@ usando la función densidad lineal de masa:
 &=& \dfrac{Gm}{l}\Big(\dfrac{1}{y}-\dfrac{1}{\sqrt{l^2+y^2}}\Big)\hat{i} -\dfrac{Gm}{y}\dfrac{1}{\sqrt{l^2+y^2}}\hat{j}
 \end{eqnarray}
 
-\item Caso general: Campo en el punto $P$ mostrado en la Figura \ref{figbarra3}.
+\item Caso general: Campo en el punto $P$ mostrado en la Fig.~\ref{figbarra3}.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1.0]{gravitacion/barra3}
+\includegraphics[scale=1.0]{barra3}
 \end{center}
 \caption{Campo general a una distancia $y$ perpendicular al eje de una barra de longitud $l$.}
 \label{figbarra3}
@@ -729,13 +831,13 @@ CAMPO DE UN ANILLO \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{gravitacion/anillo}
+\includegraphics[scale=0.7]{anillo}
 \end{center}
 \caption{Campo en el eje de un anillo.}
 \label{fanillo}
 \end{figure}
 
-Un anillo de radio $R$ tiene una masa $m$ uniformemente distribuida. Calculemos el campo $\vec{g}$ en un punto $P$ a lo largo del eje del anillo, tal como se muestra en la Figura \ref{fanillo}.
+Un anillo de radio $R$ tiene una masa $m$ uniformemente distribuida. Calculemos el campo $\vec{g}$ en un punto $P$ a lo largo del eje del anillo, tal como se muestra en la Fig.~\ref{fanillo}.
 
 \begin{eqnarray}
 \nonumber \vec{g}
@@ -756,13 +858,13 @@ CAMPO DE UNA ARANDELA \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{gravitacion/arandela}
+\includegraphics[scale=0.6]{arandela}
 \end{center}
 \caption{Arandela}
 \label{arandela}
 \end{figure}
 
-Considere un disco hueco de radio exterior $R_2$, radio interior $R_1$ y masa $M$ uniformemente distribuida. Calculemos el campo gravitacional en el punto $P$ mostrado en la Figura \ref{arandela}. Analice el caso cuando $R_1 \rightarrow 0$ (disco de radio $R_2$). Analice el caso cuando $R_1 \rightarrow 0$ y $z >> R_2$.
+Considere un disco hueco de radio exterior $R_2$, radio interior $R_1$ y masa $M$ uniformemente distribuida. Calculemos el campo gravitacional en el punto $P$ mostrado en la Fig.~\ref{arandela}. Analice el caso cuando $R_1 \rightarrow 0$ (disco de radio $R_2$). Analice el caso cuando $R_1 \rightarrow 0$ y $z >> R_2$.
 
 \begin{equation}
 \vec{g}_p(z)=\dfrac{2MG}{(R_2^2-R_1^2)} \Bigg(\dfrac{z}{\sqrt{z^2+R_2^2} } - \dfrac{z}{\sqrt{z^2+R_1^2} }  \Bigg)\hat{k}
@@ -784,7 +886,7 @@ CAMPO GRAVITACIONAL DE UNA SUPERFICIE ESFÉRICA\\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{gravitacion/esfera1}
+\includegraphics[scale=0.7]{esfera1}
 \end{center}
 \caption{Campo de un cascarón esférico}
 \label{figesfera}
@@ -793,7 +895,7 @@ CAMPO GRAVITACIONAL DE UNA SUPERFICIE ESFÉRICA\\
 Calculemos el camo para un cascarón esférico de radio $R$ y masa $m$ uniformemente distribuida.
 
 \begin{enumerate}
-\item Para $r > R$ (exterior del cascarón esférico). De acuerdo a la Figura \ref{figesfera}
+\item Para $r > R$ (exterior del cascarón esférico). De acuerdo a la Fig.~\ref{figesfera}
 
 \begin{eqnarray}
 \nonumber \vec{g}_p=-G\int_m \dfrac{dm}{\rho^2}\hat{u}_{\rho}
@@ -833,7 +935,7 @@ Reemplazando los resultados anteriores en la ecuación para el campo:
 \label{ecucascaron}
 \end{eqnarray}
 
-\item Para $r < R$ (intrior del cascarón esférico). De acuerdo a la Figura \ref{figesfera}
+\item Para $r < R$ (interior del cascarón esférico). De acuerdo a la Fig.~\ref{figesfera}
 
 \begin{eqnarray}
 \nonumber \vec{g}_p &=& -\dfrac{Gm}{4Rr^2}\hat{u}_r \int_{R-r}^{r+R} \bigg(1+ \dfrac{r^2-R^2}{\rho^2}  \bigg)d\rho \\
@@ -854,14 +956,14 @@ CAMPO GRAVITACIONAL DE UNA ESFERA MACIZA DE DENSIDAD UNIFORME DE MASA $\rho$ \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{gravitacion/esfera2}
+\includegraphics[scale=0.7]{esfera2}
 \end{center}
 \caption{Campo genrado por una esfera maciza}
 \label{figesfera2}
 \end{figure}
 
 \begin{enumerate}
-\item Para $r > R$ (exterior de la esfera), podemos integrar en cascarones esféricos y usar el resultado obtenido para el campo generado por un cascarón de masa diferencial $dm$ en el punto $P$ (ecuación \ref{ecucascaron}).
+\item Para $r > R$ (exterior de la esfera), podemos integrar en cascarones esféricos y usar el resultado obtenido para el campo generado por un cascarón de masa diferencial $dm$ en el punto $P$ (ec.~\eqref{ecucascaron}).
 
 \begin{eqnarray}
 \vec{g}(r)=\int_m d \vec{g} = \int_m \bigg(-G \dfrac{dm}{r^2}\hat{u}_r \bigg)=-G \dfrac{1}{r^2}\hat{u}_r\int_m dm= -G \dfrac{m}{r^2}\hat{u}_r ,
@@ -869,7 +971,7 @@ CAMPO GRAVITACIONAL DE UNA ESFERA MACIZA DE DENSIDAD UNIFORME DE MASA $\rho$ \\
 
 donde debe quedar claro que ahora $m$ es la masa neta de la esfera maciza.
 
-\item Para $r < R$ (interior de la esfera) sólo contribuye la masa $m'$ localizada en la esfera de radio $r < R$ tal como se muestra en la Figura \ref{figesfera2} , así:
+\item Para $r < R$ (interior de la esfera) sólo contribuye la masa $m'$ localizada en la esfera de radio $r < R$ tal como se muestra en la Fig.~\ref{figesfera2} , así:
 
 \begin{eqnarray}
 \vec{g}=-G \dfrac{m'}{r^2}\hat{u}_r = -G \bigg(m \dfrac{r^3}{R^3} \bigg)\dfrac{1}{r^2}\hat{u}_r= -Gm \dfrac{r}{R^3}\hat{u}_r ,
@@ -893,7 +995,7 @@ Al igual que el resultado obtenido para el campo gravitacional de un cascarón es
 
 ANILLO\\
 
-Consideremos el anillo de masa $m$ uniformemente distribuida y radio $R$ mostrado en la Figura \ref{fanillo}. Calculemos el potencial gravitacional en el punto $P$.
+Consideremos el anillo de masa $m$ uniformemente distribuida y radio $R$ mostrado en la Fig.~\ref{fanillo}. Calculemos el potencial gravitacional en el punto $P$.
 
 \begin{eqnarray}
 V=-G\int_m \dfrac{dm}{r}=-G \dfrac{1}{r}\int_m dm =-G \dfrac{m}{r}=-G \dfrac{m}{\sqrt{z^2+R^2}}
@@ -928,13 +1030,13 @@ ARANDELA\\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{gravitacion/arandela}
+\includegraphics[scale=0.6]{arandela}
 \end{center}
 \caption{Arandela}
 \label{arandela}
 \end{figure}
 
-Calculemos el potencial gravitacional de una arandela de radio exterior $R_2$ y radio interior $R_1$ en el punto $P$ mostrado en la Figura \ref{arandela}.
+Calculemos el potencial gravitacional de una arandela de radio exterior $R_2$ y radio interior $R_1$ en el punto $P$ mostrado en la Fig.~\ref{arandela}.
 
 
 
@@ -999,6 +1101,6 @@ V=\dfrac{Gm}{2R^3}(r^2-3R^2)
 \end{enumerate}
 
 %%%++++++++++++++++++++++++++++++++++++
-%\end{document}
+\end{document}
 
 

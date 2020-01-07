@@ -1,26 +1,5 @@
-\documentclass[letterpaper,12pt]{book}
-\usepackage[spanish]{babel}
-\usepackage{graphicx, color}
-\usepackage{amsmath}
-\usepackage{amscd}
-\usepackage{titlesec}
-\usepackage[latin1]{inputenc}
-\usepackage{listings}
-\usepackage{multicol}
-\usepackage{enumerate}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{syntonly}
-\usepackage{fancyhdr}
-\usepackage{verbatim}
-\usepackage{fancyvrb}
-\usepackage{hyperref}
-
-\begin{document}
-
-%%%++++++++++++++++++++++++++++++++++++
-
-\section{Introducción histórica}
+%%%%%%%%%%%%%%%%%%%% BEGIN G %%%%%%%%%%%%%%%%%
+\section{Movimiento planetario}
 
 Uno de los problemas fundamentales de la dinámica que ha intrigado el pensamiento del hombre desde los amaneceres de la civilización, ha sido el movimiento de los cuerpos celestes. Es este pensamiento justamente el que impulsó el desarrollo de la ciencia hasta nuestros días. 
 
@@ -54,7 +33,7 @@ Dichas leyes establecidas por Kepler fueron empíricas y su soporte y explicación
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.4]{ley1}[h]
+\includegraphics[scale=0.4]{gravitacion/ley1}[h]
 \end{center}
 \label{ley1}
 \caption{Primera ley de Kepler}
@@ -67,7 +46,7 @@ Cabe anotar que dicha ley es un resultado de las estructura funcional de la fuer
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.4]{ley2}
+\includegraphics[scale=0.4]{gravitacion/ley2}
 \end{center}
 \caption{Segunda ley de Kepler}
 \label{ley2}
@@ -118,7 +97,7 @@ Para dos puntos $1$ y $2$ sobre la trayectoria elíptica de cada planeta, se tien
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.8]{perihelio}
+\includegraphics[scale=0.8]{gravitacion/perihelio}
 \end{center}
 \label{elipse}
 \caption{Movimiento elíptico de los planetas}
@@ -164,7 +143,7 @@ En $1688$ Isaac Newton logró establecer con ayuda de las leyes de Kepler, la ley
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{fuerzagravitacional}
+\includegraphics[scale=0.9]{gravitacion/fuerzagravitacional}
 \end{center}
 \label{fuerzagravitacional}
 \caption{Fuerza de interacción gravitacional}
@@ -200,8 +179,8 @@ donde $G$ es conocida como la constante gravitacional; $G=6.673 \times 10^{-11}$
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{sistema-binario-Mm}\hspace{1.0 cm}
-\includegraphics[scale=0.6]{sistema-binario-mm}
+\includegraphics[scale=0.6]{gravitacion/sistema-binario-Mm}\hspace{1.0 cm}
+\includegraphics[scale=0.6]{gravitacion/sistema-binario-mm}
 \end{center}
 \caption{Sistema binario de estrellas en órbitas circulares con distintas e iguales masa.}
 \label{fig:sistema-binario-Mm}
@@ -309,7 +288,7 @@ Asuma que el radio terrestre es $R\approx 6400$ km.
 %
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{cambio-de-orbita}
+\includegraphics[scale=0.8]{gravitacion/cambio-de-orbita}
 \end{center}
 \caption{Cambio de órbita de un satélite.}
 \label{fig:cambio-orbita}
@@ -455,7 +434,7 @@ Supongamos que tenemos una masa puntual $m$ y a diferentes posiciones de $m$ pon
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{campo}
+\includegraphics[scale=0.8]{gravitacion/campo}
 \label{campo}
 \end{center}
 \caption{Campo gravitacional generado por una masa puntual $m$}
@@ -480,7 +459,7 @@ donde la integral debe hacerse sobre todo el cuerpo de masa $M$. Note que que el
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{figcampogcontinuo}
+\includegraphics[scale=0.9]{gravitacion/figcampogcontinuo}
 \caption{Campo gravitacional generado por una masa  $M$.}
 \label{fig_distribucion_continuo}
 \end{center}
@@ -497,7 +476,7 @@ donde la integral debe hacerse sobre todo el cuerpo de masa $M$. Note que que el
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{energiapotencial}
+\includegraphics[scale=0.9]{gravitacion/energiapotencial}
 \caption{Energía potencial}
 \label{energia potencial}
 \end{center}
@@ -540,7 +519,7 @@ U&=&-G \dfrac{m_1m_2}{r_{12}}-G \dfrac{m_1m_3}{r_{13}}-G \dfrac{m_2m_3}{r_{23}} 
 \end{eqnarray}
 \begin{figure}
 \begin{center}
-\includegraphics[scale=0.9]{tresmasas}
+\includegraphics[scale=0.9]{gravitacion/tresmasas}
 \end{center}
 \caption{Tres masas puntuales}
 \label{figtresmasas}
@@ -557,7 +536,7 @@ Un proyectil de masa $m$ es lanzado desde la superficie de la tierra formando un
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{tiro}
+\includegraphics[scale=0.3]{gravitacion/tiro}
 \end{center}
 \caption{Altura máxima ($r_{max}$) en un tiro parabólico}
 \label{fig-tiro}
@@ -610,7 +589,7 @@ Definimos la \textbf{superficie equipontencial} como aquella superficie que rode
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{superficie}
+\includegraphics[scale=0.8]{gravitacion/superficie}
 \caption{Superficie equipotenciales de una carga puntual (curva a rayas).}
 \label{superficie-equipotencial}
 \end{center}
@@ -628,7 +607,7 @@ En cualquier campo $P$ (Fig.~\ref{camposuperposicion} ), el campo debido a un gr
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{camposuperposicion}
+\includegraphics[scale=0.7]{gravitacion/camposuperposicion}
 \end{center}
 \caption{Principio de superposición para campos}
 \label{camposuperposicion}
@@ -757,7 +736,7 @@ CAMPO DE UNA BARRA\\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{barra1}
+\includegraphics[scale=0.8]{gravitacion/barra1}
 \end{center}
 \caption{Campo en el eje de una barra de longitud $l$.}
 \label{figbarra1}
@@ -778,7 +757,7 @@ usando la función densidad lineal de masa:
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.9]{barra2}
+\includegraphics[scale=0.9]{gravitacion/barra2}
 \end{center}
 \caption{Campo en el eje de una barra de longitud $l$.}
 \label{figbarra2}
@@ -798,7 +777,7 @@ usando la función densidad lineal de masa:
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1.0]{barra3}
+\includegraphics[scale=1.0]{gravitacion/barra3}
 \end{center}
 \caption{Campo general a una distancia $y$ perpendicular al eje de una barra de longitud $l$.}
 \label{figbarra3}
@@ -831,7 +810,7 @@ CAMPO DE UN ANILLO \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{anillo}
+\includegraphics[scale=0.7]{gravitacion/anillo}
 \end{center}
 \caption{Campo en el eje de un anillo.}
 \label{fanillo}
@@ -858,7 +837,7 @@ CAMPO DE UNA ARANDELA \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{arandela}
+\includegraphics[scale=0.6]{gravitacion/arandela}
 \end{center}
 \caption{Arandela}
 \label{arandela}
@@ -886,7 +865,7 @@ CAMPO GRAVITACIONAL DE UNA SUPERFICIE ESFÉRICA\\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{esfera1}
+\includegraphics[scale=0.7]{gravitacion/esfera1}
 \end{center}
 \caption{Campo de un cascarón esférico}
 \label{figesfera}
@@ -956,7 +935,7 @@ CAMPO GRAVITACIONAL DE UNA ESFERA MACIZA DE DENSIDAD UNIFORME DE MASA $\rho$ \\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{esfera2}
+\includegraphics[scale=0.7]{gravitacion/esfera2}
 \end{center}
 \caption{Campo genrado por una esfera maciza}
 \label{figesfera2}
@@ -1030,7 +1009,7 @@ ARANDELA\\
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{arandela}
+\includegraphics[scale=0.6]{gravitacion/arandela}
 \end{center}
 \caption{Arandela}
 \label{arandela}
@@ -1099,8 +1078,5 @@ V=\dfrac{Gm}{2R^3}(r^2-3R^2)
 \end{equation}
 
 \end{enumerate}
-
-%%%++++++++++++++++++++++++++++++++++++
-\end{document}
-
+%%%%%%%%%%%%%%%%%%%% END G %%%%%%%%%%%%%%%%%
 

@@ -1,25 +1,19 @@
-%%%%%%%%%%%%%%%%%%%% BEGIN G %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% BEGIN GRAV %%%%%%%%%%%%%%%%%
 \section{Movimiento planetario}
 
-Uno de los problemas fundamentales de la dinámica que ha intrigado el pensamiento del hombre desde los amaneceres de la civilización, ha sido el movimiento de los cuerpos celestes. Es este pensamiento justamente el que impulsó el desarrollo de la ciencia hasta nuestros días. 
+Uno de los problemas fundamentales del pensamiento del hombre en la antigüedad, fue el movimiento de los cuerpos celestes. Este pensamiento impulsó el desarrollo de la ciencia hasta nuestros días. Inicialmente para explicar el movimiento de las estrellas errantes y de las estrellas fijas en el cielo, se desarrollaron los siguientes modelos planetarios. 
 
 \subsection{Modelos planetarios}
+
 \begin{enumerate}
-\item \textbf{Modelo geocéntrico:} Este primer modelo formulado en el año $100$ por el astrónomo griego Ptolomeo de Alejandría, planteó que la tierra era el centro del universo y el conjunto de las estrellas fijas inundaban el universo circundante alrededor de la tierra. Las estrellas errantes que se observaban en la noches, giraban en torno a la tierra, algunos describiendo trayectorias muy complicadas, conocidas como epiciclos \cite{alonso-z}. Cabe anotar que este modelo tenía como fundamentación al ``hombre como el centro del universo''.
+\item \textbf{Modelo geocéntrico:} Este primer modelo fue formulado en el año $100$ por el astrónomo griego Ptolomeo de Alejandría. En este sistema la tierra era el centro del universo y el conjunto de las estrellas fijas inundaban el universo circundante alrededor de la tierra. Por otro lado, se asumió que las estrellas errantes que se observaban en la noches giraban en torno a la tierra, algunas describiendo trayectorias muy complicadas, conocidas como epiciclos~\cite{alonso-z}. Cabe anotar que este modelo tenía como fundamentación al ``hombre como el centro del universo'', fue apoyado fuertemene por la iglesia y prevaleció por alrededor de 1400 años.
 
 \item \textbf{Modelo heliocéntrico:} Este modelo fue propuesto por el astrónomo polaco Nicolás Copérnico ($1473-1543$). Tiene como fundamentación al sol como el centro del universo.
-Cabe anotar que la idea de tener al sol como centro del universo, no era una idea nueva. Se tienen datos históricos que argumentan que fue realmente una idea del filósofo Aristarco de Samos, muchos años atrás.
-
+Cabe anotar que la idea de tener al sol como centro del universo, no era una idea nueva. Se tienen datos históricos que argumentan que fue realmente una idea del filósofo Aristarco de Samos, muchos años atrás~\cite{alonso-z}.
 \end{enumerate}
 
-Una vez establecido este último modelo, el físico Johanes Kepler ($1571-1630$) descubre las leyes planetarias haciendo un cuidados análisis de los datos coleccionados por el astrónomo Tycho Brahe ($1546-1601$), el cual murió sin poder dar una buena interpretación de sus datos, coleccionados durante toda su vida.\\
-Dichas leyes establecidas por Kepler fueron empíricas y su soporte y explicación teórica fue dada unos años después por el Físico Isacc Newton ($1642-1727$). Este último hizo la contribución más notable a la dinámica de los cuerpos celestes, la cual tiene su soporte más importante en lo que hoy conocemos como la ley de la gravitación universal, formulada en el año $1686$ y publicada en el año de $1687$ en el famoso libro; "Los Principia" (Philosophiae Naturalis Mathematica).
-
-
-
-
-
-
+Cabe mencionar que los dos modelos anteriores lograron explicar el movieminto de las estrellas de una manera aceptable. Sin embargo, prevalecian algunos detalles que necesitaron un estudio y una compresion más profunda de los mismos. Pasados unos años, el físico Johanes Kepler ($1571-1630$) usó el modelo de Copérnico y descubrió las leyes planetarias después de hacer un cuidadoso análisis de los datos coleccionados por el astrónomo danes Tycho Brahe ($1546-1601$). Éste último murió sin poder dar una buena interpretación de sus datos, coleccionados durante toda su vida.
+No obstante, estas leyes fueron empíricas y su explicación teórica fue dada unos años después por el Físico británico Isacc Newton ($1642-1727$). Este último hizo la contribución más notable a la dinámica de los cuerpos celestes, que hoy en día conocemos como la ley de la gravitación universal, formulada en el año $1686$ y publicada en el año de $1687$ en el famoso libro; ``Los Principia" (Philosophiae Naturalis Mathematica~\cite{Whitehead:268025}).
 
 
 
@@ -27,96 +21,90 @@ Dichas leyes establecidas por Kepler fueron empíricas y su soporte y explicación
 \subsection{Leyes de Kepler}
 
 \begin{enumerate}
-
-\item \textbf{LEY $1$}: Todos los planetas se mueven en órbitas elípticas con el sol en una de sus focos. 
-
-
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.4]{gravitacion/ley1}[h]
-\end{center}
-\label{ley1}
-\caption{Primera ley de Kepler}
-\end{figure}
-
-Dicha ley generó una gran controversia para la época, debido a que las órbitas propuestas por el modelo heliocéntrico eran circulares. Las órbitas circulares reflejaban la perfección del cielo. Las órbitas elípticas desafiaban la nueva concepción física y había obstaculizado el trabajo del señor Tycho durante toda su vida.\\
-Cabe anotar que dicha ley es un resultado de las estructura funcional de la fuerza de gravitación universal que estudiaremos más adelante.
-
-\item \textbf{LEY $2$}: El radio-vector dirigido desde el sol a un planeta, barre áreas iguales en tiempos iguales. 
-
+\item \textbf{LEY $1$}: Todos los planetas se mueven en órbitas elípticas con el sol en una de sus focos (ver Fig.~\ref{fig:ley1}).
+%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.4]{gravitacion/ley2}
+\includegraphics[scale=0.4]{gravitacion/g-ley1}
 \end{center}
-\caption{Segunda ley de Kepler}
-\label{ley2}
+\caption{Primera ley de Kepler.}
+\label{fig:ley1}
 \end{figure}
+%%%%%%%%%%%%%%%
 
-Kepler obtuvo dicha ley estudiando detenidamente los datos obtenido en las observaciones astronómicas de Tycho. En la Fig.~\ref{ley2} podemos ver que el área barrida en un tiempo $t$ fijo, siempre es $A$. 
+Dicha ley generó una gran controversia para la época, debido a que las órbitas propuestas por el modelo heliocéntrico de Copérnico eran circulares y reflejaban la perfección del cielo. Las órbitas elípticas habían obstaculizado el trabajo Tycho Brahe durante toda su vida.
+Cabe anotar que esta ley fue empírica. Fue deducida de la observación astronómica. Sin embargo, es un resultado de las estructura funcional de la fuerza de gravitación universal, la cual estudiaremos posteriormente.
 
-Veamos las primeras implicaciones de esta ley:
-%Consideremos un diferencial de área $dA$
+\item \textbf{LEY $2$}: El radio-vector dirigido desde el sol a un planeta, barre áreas iguales en tiempos iguales (ver Fig.~\ref{fig:ley2}).
+%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{gravitacion/g-ley2}
+\end{center}
+\caption{Segunda ley de Kepler.}
+\label{fig:ley2}
+\end{figure}
+%%%%%%%%%%%%%%%%
+
+Kepler obtuvo dicha ley estudiando detenidamente los datos obtenido en las observaciones astronómicas de Tycho Brahe. En la Fig.~\ref{fig:ley2} podemos ver que el área barrida en un tiempo $t$ fijo, siempre es $A$. 
+
+Veamos las primeras implicaciones de esta ley. Supongamos que un planeta de masa $m$ está en órbita elíptica alrededor del sol. Consideremos un diferencial de área $dA$, tal como se muestra en la Fig.~\ref{fig:dA}.
+%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.7]{gravitacion/g-dA}
+\end{center}
+\caption{Diferencial de área.}
+\label{fig:dA}
+\end{figure}
+%%%%%%%%%%%%%%%%
 \begin{equation}
-dA \approx \dfrac{|\vec{r} \times d\vec{r}|}{2} 
-\Rightarrow \dfrac{dA}{dt} \approx \dfrac{1}{2m}|\vec{r} \times m \dfrac{d\vec{r}}{dt}| = \dfrac{1}{2m}|\vec{r}\times \vec{P}|=\dfrac{|\vec{L}|}{2m}
+dA = \dfrac{|\vec{r} \times d\vec{r}|}{2} 
+\Rightarrow \dfrac{dA}{dt} = \dfrac{1}{2m}|\vec{r} \times m \dfrac{d\vec{r}}{dt}| = \dfrac{1}{2m}|\vec{r}\times \vec{p}|=\dfrac{|\vec{L}|}{2m}\,,
+\label{ec:dA}
 \end{equation}
-
-Así, de el razonamiento anterior queda claro que el hecho de que se barran áreas iguales en tiempos iguales tiene como consecuencia que el momento angular $\vec{L}$ de los planetas alrededor del sol es un constante, es decir:
-
+donde $\vec{p}$ y $\vec{L}$ son el momento lineal y angular de la masa.
+Así, de la ec.~\ref{ec:dA} queda claro que el hecho de que se barran áreas iguales en tiempos iguales tiene como consecuencia que el momento angular $\vec{L}$ de los planetas alrededor del sol es constante, es decir:
 \begin{equation}
-\vec{L}=\vec{cte}
+\vec{L}=\vec{r}\times \vec{p}=\vec{cte}\,.
 \end{equation}
-
-Además, esto a su vez establece uno de los precedentes fundamentales en la formulación de la ley de la gravitación universal que establecería Newton unos años después. El hecho de que el momento angular sea una constante implica que la fuerza que está actuando sobre los planetas, es una fuerza central, esto puede verse rápidamente:
-
+Además, esto establece uno de los precedentes fundamentales para la formulación de la ley de la gravitación universal. El hecho de que el momento angular sea una constante implica que la fuerza que está actuando sobre los planetas, es una fuerza central. Esto puede verse de la siguiente forma:
 \begin{equation}
-\vec{L}=\vec{r} \times \vec{p} \Rightarrow \dfrac{d\vec{L}}{dt}=\dfrac{d}{dt}(\vec{r}\times \vec{p}) =\dfrac{d\vec{r}}{dt}\times \vec{p} + \vec{r} \times \dfrac{d\vec{p}}{dt} = \vec{r} \times \dfrac{d\vec{p}}{dt}
+\vec{L}=\vec{r} \times \vec{p} \Rightarrow \dfrac{d\vec{L}}{dt}=\dfrac{d}{dt}(\vec{r}\times \vec{p}) =\dfrac{d\vec{r}}{dt}\times \vec{p} + \vec{r} \times \dfrac{d\vec{p}}{dt} = \vec{r} \times \dfrac{d\vec{p}}{dt}\,.
+\label{ec:L-constante}
 \end{equation}
-
-Así, el torque neto $\vec{\tau}$ que actúa sobre cada planeta, debido a su interacción con el sol, es:
-
+Por lo tanto, el torque neto $\vec{\tau}$ que actúa sobre cada planeta, debido a su interacción con el sol, está dado por:
 \begin{equation}
-\vec{\tau}= \dfrac{d\vec{L}}{dt}= \vec{r}\times \dfrac{d\vec{p}}{dt} = \vec{r} \times \vec{F} ,
+\vec{\tau}= \dfrac{d\vec{L}}{dt}= \vec{r}\times \dfrac{d\vec{p}}{dt} = \vec{r} \times \vec{F}\,,
 \end{equation}
+donde $\vec{F}$ es la fuerza neta que actúa sobre cada planeta. Ahora, si $\vec{L}$ es una constante, entonces la ecuación anterior implica que $\vec{r}\times \vec{F}= \vec{0}$, y por lo tanto $\vec{F}$ y $\vec{r}$ son antiparalelas (fuerza atractiva), es decir, \textit{la fuerza que mantiene en órbita a los planetas alrededor del sol, es una fuerza central atractiva}.\footnote{La fuerza $\vec{F}$ y el vector posición $\vec{r}$ no puden ser paralelos dado que la trayectoria es una curva cerrada.}
 
-donde $\vec{F}$ es la fuerza neta que actúa sobre cada planeta. Ahora, si $\vec{L}$ es una constante, entonces la ecuación anterior implica que:
-
+De lo anterior, tenemos que si consideramos dos puntos $p_1$ y $p_2$ sobre la trayectoria elíptica de cada planeta, se cumple que:
 \begin{equation}
-\vec{r}\times \vec{F}= \vec{0} ,
-\end{equation} 
-
-es esto se deduce que $\vec{F}$ y $\vec{r}$ son antiparalelas (fuerza atractiva), es decir, \textit{la fuerza que mantiene en órbita a los planetas alrededor del sol, es una fuerza central atractiva}.
-
-Para dos puntos $1$ y $2$ sobre la trayectoria elíptica de cada planeta, se tiene:
-\begin{equation}
-\vec{L}=\vec{cte} \Rightarrow |\vec{r}_1 \times \vec{p}_1 |=|\vec{r}_2 \times \vec{p}_2 | \Rightarrow |\vec{r}_1 \times m\vec{v}_1 |=|\vec{r}_2 \times m\vec{v}_2 | 
+\vec{L}=\vec{cte} \Rightarrow |\vec{r}_1 \times \vec{p}_1 |=|\vec{r}_2 \times \vec{p}_2 | \Rightarrow |\vec{r}_1 \times m\vec{v}_1 |=|\vec{r}_2 \times m\vec{v}_2 |\,. \nonumber
 \end{equation}
 \begin{equation}
 \Rightarrow|\vec{r}_1 \times \vec{v}_1 |=|\vec{r}_2 \times \vec{v}_2 |.
 \end{equation}
-
-\begin{figure}
+%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.8]{gravitacion/perihelio}
+\includegraphics[scale=0.8]{gravitacion/g-perihelio}
 \end{center}
-\label{elipse}
-\caption{Movimiento elíptico de los planetas}
+\caption{Perihelio y afelio de los planetas.}
+\label{fig:relacion-vr}
 \end{figure}
-
-En el caso particular del perihelio y el afelio~\ref{elipse} :
-
+%%%%%%%%%%%%%%%%
+En el caso particular del perihelio y el afelio  mostrado en la Fig.~\ref{fig:relacion-vr}:
 \begin{equation}
 |\vec{r}_1 \times \vec{v}_1 |=|\vec{r}_2 \times \vec{v}_2 |\Rightarrow v_1r_1 =v_2r_2 \Rightarrow 
-\boxed{\dfrac{v_1}{v_2}=\dfrac{r_2}{r_1}}
+\boxed{\dfrac{v_1}{v_2}=\dfrac{r_2}{r_1}}\,.
 \end{equation}
-
 De la ecuación anterior se puede inferir claramente que la rapidez de los planetas al pasar cerca al punto más cercano al sol, debe ser mayor a la rapidez que tengan dichos planetas cuando pasan por el punto más alejado del sol, es decir, la rapidez en el perihelio es mayor a la rapidez en el afelio.
-
-Resumimos esta ley, afirmando que es una consecuencia directa de la conservación del momento angular en un sistema bajo fuerzas centrales. Resultado conocido en la mecánica de una partícula.
 
 \item \textbf{LEY $3$:} El cuadrado del periodo orbital $P$ de cualquier planeta es proporcional al cubo del semieje mayor $a$ de la órbita elíptica.
 
-De acuerdo a la Fig.~\ref{elipse}:
+De acuerdo a la Fig.~\ref{fig:relacion-vr}:
 
 \begin{equation}
 P^2= k a^3 ,
@@ -531,8 +519,8 @@ U=-G\bigg(\dfrac{m_1m_2}{r_{12}}+ \dfrac{m_1m_3}{r_{13}}+\dfrac{m_1m_4}{r_{14}}+
 \end{eqnarray}
 \end{itemize}
 
-\subsection*{Ejemplo \cite{klepner}}
-Un proyectil de masa $m$ es lanzado desde la superficie de la tierra formando un ángulo $\alpha$ con la vertical tal como se muestra en la Fig.~\ref{fig-tiro}. Si la rapidez inicial del proyectil es $v_0=\sqrt{\dfrac{GM}{R_e}}$, donde $M$ es la masa de la tierra, determinemos la altura máxima alcanzada por el proyectil (\textbf{$r_{max}$}).
+\subsection*{Ejemplo}
+Un proyectil de masa $m$ es lanzado desde la superficie de la tierra formando un ángulo $\alpha$ con la vertical tal como se muestra en la Fig.~\ref{fig-tiro}. Si la rapidez inicial del proyectil es $v_0=\sqrt{\dfrac{GM}{R_e}}$, donde $M$ es la masa de la tierra, determinemos la altura máxima alcanzada por el proyectil (\textbf{$r_{max}$}).\cite{klepner} \cite{youngfisica}
 
 \begin{figure}[h]
 \begin{center}
@@ -632,40 +620,49 @@ V=\sum_{i=1}^{n}V_i = \sum_{i=1}^{n} \dfrac{-Gm_i}{r_i}
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Movimiento general bajo interacción gravitacional}
 
-Consideremos el movimiento de un cuerpo de masa $m$ alrededor de un cuerpo de masa $M>m$ tal como se muestra en la Fig.~\ref{fig:}.
-%
-Según la conservación de la energía mecánica:
+Consideremos el movimiento de un cuerpo de masa $m$ alrededor de un cuerpo de masa $M>m$ tal como se muestra en la Fig.~\ref{fig:movimiento-general}.
+%%%%%%%%%%%%%%
+\begin{figure}
+\begin{center}
+\includegraphics[scale=1]{gravitacion/g-movimiento-general}
+\end{center}
+\caption{Movimiento general de un cuerpo bajo interacción gravitacional.}
+\label{fig:movimiento-general}
+\end{figure}
+%%%%%%%%%%%%
+Según la conservación de la energía mecánica
 \begin{align}
 \label{eq:E-mecanica}
-E =& \dfrac{1}{2}mv^2 + U(r) = \dfrac{1}{2}m(v_r^2+v_\theta^2) -\dfrac{G m}{r} = \dfrac{1}{2}m\left(\left(\dfrac{dr}{dt}\right)^2+\left(r\dfrac{d\theta}{dt}\right)^2\right) -\dfrac{G m}{r} \nonumber \\
-=& \dfrac{1}{2}m\left(\dfrac{d\theta}{dt}\right)^2 \left(\left(\dfrac{dr}{d\theta}\right)^2+r^2\right) -\dfrac{G m}{r}\,.
+E =& \dfrac{1}{2}mv^2 + U(r) = \dfrac{1}{2}m(v_r^2+v_\theta^2) -\dfrac{G m}{r} = \dfrac{1}{2}m\left[\left(\dfrac{dr}{dt}\right)^2+\left(r\dfrac{d\theta}{dt}\right)^2\right] -\dfrac{G m}{r} \nonumber \\
+=& \dfrac{1}{2}m\left(\dfrac{d\theta}{dt}\right)^2 \left[\left(\dfrac{dr}{d\theta}\right)^2+r^2\right]-\dfrac{G m}{r}\,.
 \end{align}
-Por otro lado, usando la definición de momento angular, tenemos:
+%
+Por otro lado, usando la definición de momento angular
 \begin{align}
 \label{eq:L}
 \vec{L}=m\,\vec{r}\times\vec{v}=m\,\vec{r}\times(\vec{v_r}+\vec{v_\theta})= m\,\vec{r}\times\vec{v_\theta} \to L = m\,r \left(r\dfrac{d\theta}{dt}\right)\,.
 \end{align}
-Reemplazando la ec.~\eqref{eq:L} en la ec.~\eqref{eq:E-mecanica}:
+Reemplazando la ec.~\eqref{eq:L} en la ec.~\eqref{eq:E-mecanica} tenemos que:
 \begin{align}
 \label{eq:drdthetat}
-\left(\dfrac{dr}{d\theta}\right)^2 = \dfrac{m^2r^4}{L^2}\left[\dfrac{2E}{m}+\dfrac{2Gm}{r}-\dfrac{L^2}{m^2r^2}\right]\,.
+\left(\dfrac{dr}{d\theta}\right)^2 = \dfrac{m^2r^4}{L^2}\left(\dfrac{2E}{m}+\dfrac{2GM}{r}-\dfrac{L^2}{m^2r^2}\right)\,.
 \end{align}
-%
-Por otro lado en el estudio de la geometría se tiene que la ecuación de las cónicas es:
+
+Por otro lado, en el estudio de la geometría se tiene que la ecuación de las cónicas es
 \begin{equation}
 \label{eq:conicas}
 \dfrac{\epsilon d}{r} = 1 +\epsilon\cos\theta\,,
 \end{equation}
-donde $\epsilon$ es la excentricidad de la cónica, $d$ es la distancia a la directriz y $r,\theta$ son la coordenadas polares.
-Usando la anterior ecuación se tiene que:
+donde $\epsilon$ es la excentricidad de la cónica, $d$ es la distancia a la directriz y $r,\theta$ son la coordenadas polares~\cite{alonso1967fundamental}.
+Usando esta ecuación se tiene que
 \begin{equation}
 \label{eq:conica-drdtheta}
 \left(\dfrac{dr}{d\theta}\right)^2=\dfrac{r^4\sin\theta^2}{d^2}\,.
 \end{equation}
-Comparando las ecs.~\eqref{eq:drdthetat} y~\eqref{eq:conica-drdtheta} tenemos que:
+Por lo tanto, de acuerdo a las ecs.~\eqref{eq:drdthetat} y~\eqref{eq:conica-drdtheta} tenemos que:
 \begin{align}
 \sin\theta^2 =& \dfrac{d^2m^2}{L^2}\left(\dfrac{2E}{m}+\dfrac{2Gm}{r}-\dfrac{L^2}{m^2r^2}\right)=\left(1-\dfrac{d^2}{r^2}+\dfrac{2d}{r\epsilon}-\dfrac{1}{\epsilon^2}\right)\,,
 \end{align} 
@@ -683,7 +680,8 @@ donde usamos la ec.~\eqref{eq:conicas}. Comparando las potencias en la coordenad
 \end{equation}
 \end{itemize}
 
-Interpretación de las anteriores ecuaciones:
+A continuación, en la Tabla~\ref{tab:conicas-interpretacion}. mostramos algunas características de las tres cónicas mostradas, enfatizando en el caso particular de la elipse. 
+%%%%%%%%%%%%%
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
@@ -691,7 +689,7 @@ Interpretación de las anteriores ecuaciones:
 Cónica & Excentricidad & Energía & Momento angular \\
 \hline
 &&&\\
-Elipse & $\epsilon<1$ & $E=-\dfrac{GMm}{2a} < 0$& $L^2=Gm^2Ma(1-\epsilon^2)$\\
+Elipse & $0\leq\epsilon<1$ & $E=-\dfrac{GMm}{2a} < 0$& $L^2=Gm^2Ma(1-\epsilon^2)$\\
 &&&\\
 \hline
 &&&\\ 
@@ -704,9 +702,12 @@ Hipérbola & $\epsilon>1$ & $E> 0$& $L>0$\\
 \hline
 \end{tabular}
 \end{center}
+\caption{Energía y momento angular en una órbita elíptica. Recuerde que $\epsilon=0$ es la circunferencia.}
+\label{tab:conicas-interpretacion}
 \end{table} 
-
-Note que el tamaño de la elipse está determinado por la energía, es decir $E\approx -1 /a$, sin embargo, la forma de la elipse está determinado por el momento angular (pudene tenerse muchas órbitas con la misma energía, pero con distinto momento angular). Por ejemplo como se muestra en la Fig.~\ref{fig:}.
+%%%%%%%%%%%
+Note que aunque el tamaño de una órbita elíptica está determinado por la energía, es decir $E\approx -1 /a$, la forma de la elipse (excentricidad) está determinado por el momento angular. En general, se pueden tener muchas órbitas elípticas con la misma energía, pero con distinto momento angular. 
+%Por ejemplo como se muestra en la Fig.~\ref{fig:}.
  
  
  
@@ -728,333 +729,354 @@ Note que el tamaño de la elipse está determinado por la energía, es decir $E\app
 
 \subsection{Ejemplos de campo gravitacional}
 
-CAMPO DE UNA BARRA\\
+\subsubsection{Campo de una barra}
 
 \begin{enumerate}
 
-\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida (Fig.~\ref{figbarra1}). El campo en el punto $P$ a una distancia $d$ lo largo del eje de la barra está dado por:
-
+\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida tal como muestra en la Fig.~\ref{fig:gravitacion-barra1}. El campo en el punto $P$ a una distancia $d$ por el eje de la barra está dado por:
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.8]{gravitacion/barra1}
 \end{center}
 \caption{Campo en el eje de una barra de longitud $l$.}
-\label{figbarra1}
+\label{fig:gravitacion-barra1}
 \end{figure}
 
 \begin{eqnarray}
-\vec{g}=-G\int_M \dfrac{dm}{r^2}\hat{u}_r = -G\int_M \dfrac{dm}{x^2}(-\hat{i})
+\vec{g}=-G\int_m \dfrac{dm}{r^2}\hat{u}_r = -G\int_m \dfrac{dm}{x^2}(-\hat{i})\,.
 \end{eqnarray}
-
-usando la función densidad lineal de masa:
+Usando la función densidad lineal de masa:
 \begin{displaymath}
-\lambda=\dfrac{dm}{dx}=\dfrac{m}{l} \Rightarrow dm=\dfrac{m}{l}dx
+\lambda=\dfrac{dm}{dx}=\dfrac{m}{l} \Rightarrow dm=\dfrac{m}{l}dx\,, 
 \end{displaymath}
-
+tenemos que:
 \begin{equation}
-\vec{g}= -G\int_d^{d+l} \dfrac{dm}{x^2}(-\hat{i})=G \dfrac{M}{d(d+l)}\hat{i}
+\vec{g}= -G\int_d^{d+l} \dfrac{dm}{x^2}(-\hat{i})=G \dfrac{M}{d(d+l)}\hat{i}\,.
 \end{equation}
 
+\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida tal como se muestra en la Fig.~\ref{fig:gravitacion-barra2}. El campo en el punto $P$ está dado por:
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.9]{gravitacion/barra2}
 \end{center}
-\caption{Campo en el eje de una barra de longitud $l$.}
-\label{figbarra2}
+\caption{Campo en el eje perpendicular a un extremo de una barra de longitud $l$.}
+\label{fig:gravitacion-barra2}
 \end{figure}
-
-\item Una barra delgada de longitud $l$ tiene una masa $m$ uniformemente distribuida (Fig.~\ref{figbarra2}). El campo en el punto $P$ está dado por:
-
 \begin{eqnarray}
-\nonumber \vec{g} & = & -G\int_M \dfrac{dm}{r^2}\hat{u}_r =-G\int_M \dfrac{dm}{r^2} (-\cos\theta \hat{i} + \sin\theta \hat{j})  \\ \nonumber
-& = &-G\int_M \dfrac{dm}{r^2} (-\dfrac{x}{r} \hat{i} + \dfrac{y}{r} \hat{j}) 
+\nonumber \vec{g} & = & -G\int_m \dfrac{dm}{r^2}\hat{u}_r =-G\int_m \dfrac{dm}{r^2} (-\cos\theta \hat{i} + \sin\theta \hat{j})  \\ \nonumber
+& = &-G\int_m \dfrac{dm}{r^2} (-\dfrac{x}{r} \hat{i} + \dfrac{y}{r} \hat{j}) 
 =-G\int_0^l (m/l)dx(-\dfrac{x}{r^3} \hat{i} + \dfrac{y}{r^3} \hat{j}) \\\nonumber
 &= &-\dfrac{Gm}{l}\int_0^l dx\Big(-\dfrac{x}{(y^2+x^2)^{3/2}} \hat{i} + \dfrac{y}{(y^2+x^2)^{3/2}} \hat{j}\Big) \\
-&=& \dfrac{Gm}{l}\Big(\dfrac{1}{y}-\dfrac{1}{\sqrt{l^2+y^2}}\Big)\hat{i} -\dfrac{Gm}{y}\dfrac{1}{\sqrt{l^2+y^2}}\hat{j}
+&=& \dfrac{Gm}{l}\Big(\dfrac{1}{y}-\dfrac{1}{\sqrt{l^2+y^2}}\Big)\hat{i} -\dfrac{Gm}{y}\dfrac{1}{\sqrt{l^2+y^2}}\hat{j}\,.
 \end{eqnarray}
 
-\item Caso general: Campo en el punto $P$ mostrado en la Fig.~\ref{figbarra3}.
-
+\item Caso general: Campo en el punto $P$ mostrado en la Fig.~\ref{fig:gravitacion-barra3}.
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=1.0]{gravitacion/barra3}
+\includegraphics[scale=1.2]{gravitacion/barra3}
 \end{center}
 \caption{Campo general a una distancia $y$ perpendicular al eje de una barra de longitud $l$.}
-\label{figbarra3}
+\label{fig:gravitacion-barra3}
 \end{figure}
-
+%
 \begin{eqnarray}
 \nonumber
 \vec{g}&=&-G\int_m \dfrac{dm}{r^2}\hat{u}_r =-G\int_m \dfrac{dm}{r^2} (-\cos\theta \hat{i}+\sin\theta\hat{j}) = -G \lambda \int_m dx \bigg[\dfrac{-x}{r^3}\hat{i}+ \dfrac{y}{r^3}\hat{j}\bigg]\\ \nonumber
 &=&-G \lambda \bigg[-\int_{-x_1}^{x_2}\dfrac{x dx}{(x^2+y^2)^{3/2}} \hat{i}+\int_{-x_1}^{x_2}\dfrac{ydx}{(x^2+y^2)^{3/2}}\hat{j}  \bigg] \\ 
-&=&-G \lambda \Bigg[\bigg(\dfrac{1}{\sqrt{x_2^2+y^2} }-\dfrac{1}{\sqrt{x_1^2+y^2} } \bigg)\hat{i} + \dfrac{1}{y} \bigg(\dfrac{x_2}{\sqrt{x_2^2+y^2} }+\dfrac{x_1}{\sqrt{x_1^2+y^2} } \bigg)\hat{j} \ \Bigg] ,
+&=&-G \lambda \Bigg[\bigg(\dfrac{1}{\sqrt{x_2^2+y^2} }-\dfrac{1}{\sqrt{x_1^2+y^2} } \bigg)\hat{i} + \dfrac{1}{y} \bigg(\dfrac{x_2}{\sqrt{x_2^2+y^2} }+\dfrac{x_1}{\sqrt{x_1^2+y^2} } \bigg)\hat{j} \ \Bigg] \,,
 \end{eqnarray}
-
-o alternativamente usando $x_1=y/\tan\theta_1$ y $x_2=-y/\tan\theta_2$:
-
+o alternativamente, usando $x_1=y/\tan\theta_1$ y $x_2=-y/\tan\theta_2$:
 \begin{eqnarray}
-\vec{g}=\dfrac{-G \lambda }{y}\bigg[(\sin\theta_1 -\sin\theta_2)\hat{i}+(\cos\theta_1 -\cos\theta_2)\hat{j}\bigg]
+\vec{g}=\dfrac{-G \lambda }{y}\bigg[(\sin\theta_1 -\sin\theta_2)\hat{i}+(\cos\theta_1 -\cos\theta_2)\hat{j}\bigg]\,.
 \end{eqnarray}
 
-En el caso de tener una \textit{barra infinita} de densidad $\lambda$ uniforme podemos usar los resultados anteriores con $x_2 \rightarrow \infty$ y $x_1 \rightarrow \infty$ ó $\theta_1 \rightarrow 0$ y $\theta_2 \rightarrow \pi$, así:
-
+En el caso de tener una \textit{barra infinita} de densidad $\lambda$ uniforme podemos usar el resultados anterior con $x_2 \rightarrow \infty$ y $x_1 \rightarrow \infty$ ó $\theta_1 \rightarrow 0$ y $\theta_2 \rightarrow \pi$, tal que:
+%
 \begin{eqnarray}
-\vec{g}=\dfrac{-2G\lambda}{y}\hat{j}
+\vec{g}(y)=\dfrac{-2G\lambda}{y}\hat{j}\,.
 \end{eqnarray}
 
-\textbf{EJERCICIO:} Use el resultado general para el campo de una barra y verifique los dos casos particulares hechos con anterioridad.
+\textbf{Ejercicio:} Use el resultado general para el campo de una barra y verifique los dos casos particulares hechos con anterioridad.
 
 \end{enumerate}
 
-CAMPO DE UN ANILLO \\
 
+
+\subsubsection{Campo de una anillo}
+Un anillo de radio $R$ tiene una masa $m$ uniformemente distribuida. El campo $\vec{g}$ en un punto $P$ a lo largo del eje del anillo, tal como se muestra en la Fig.~\ref{fig:gravitacion-anillo}.
+%
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.7]{gravitacion/anillo}
 \end{center}
-\caption{Campo en el eje de un anillo.}
-\label{fanillo}
+\caption{Campo en el eje de un anillo de radio R.}
+\label{fig:gravitacion-anillo}
 \end{figure}
-
-Un anillo de radio $R$ tiene una masa $m$ uniformemente distribuida. Calculemos el campo $\vec{g}$ en un punto $P$ a lo largo del eje del anillo, tal como se muestra en la Fig.~\ref{fanillo}.
-
+%
 \begin{eqnarray}
 \nonumber \vec{g}
 &=&-G\int_m \dfrac{dm}{r^2}\hat{u}_r =-G\int_m \dfrac{dm}{r^2}(\sin\theta \hat{k} - \cos\theta \hat{R}  )\\\nonumber
 &=&-G\int_m \dfrac{dm}{r^2}[\sin\theta \hat{k} - \cos\theta (\cos\phi\hat{i}-\sin\phi\hat{j}) ] \\\nonumber
 &=&-G\int_0^{2\pi} \dfrac{md\phi}{2\pi} \dfrac{1}{r^2}[\sin\theta \hat{k} - \cos\theta (\cos\phi\hat{i}-\sin\phi\hat{j}) ] \\
-&=& -G \dfrac{m2\pi}{2\pi r^2}\sin\theta \hat{k}=-G \dfrac{m}{r^2}\big(\dfrac{z}{r}\big)=-Gm \dfrac{z}{(z^2+R^2)^{3/2}}\hat{k}
+&=& -G \dfrac{m2\pi}{2\pi r^2}\sin\theta \hat{k}=-G \dfrac{m}{r^2}\left(\dfrac{z}{r}\right)\hat{k}=-Gm \dfrac{z}{(z^2+R^2)^{3/2}}\hat{k}\,.
+\label{ec:campo-gravitacional-anillo}
 \end{eqnarray}
-
 Note que en el cálculo anterior usamos:
-
+%
 \begin{displaymath}
-\lambda=\dfrac{m}{l}=\dfrac{m}{2\pi R}=\dfrac{dm}{dl}=\dfrac{dm}{Rd\phi}\Rightarrow dm=\dfrac{md\phi}{2\pi}
+\lambda=\dfrac{m}{l}=\dfrac{m}{2\pi R}=\dfrac{dm}{dl}=\dfrac{dm}{Rd\phi}\Rightarrow dm=\dfrac{md\phi}{2\pi}\,.
 \end{displaymath}
 
 
-CAMPO DE UNA ARANDELA \\
-
+\subsubsection{Campo de una arandela y de un disco}
+Considere un disco hueco de radio exterior $R_2$, radio interior $R_1$ y masa $m$ uniformemente distribuida. El campo gravitacional en el punto $P$ mostrado en la Fig.~\ref{fig:gravitacion-arandela} está dado por:
+%
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.6]{gravitacion/arandela}
+\includegraphics[scale=0.9]{gravitacion/arandela}
 \end{center}
-\caption{Arandela}
-\label{arandela}
+\caption{Arandela de radio interno $R_1$ y radio externo $R_2>R_1$.}
+\label{fig:gravitacion-arandela}
 \end{figure}
-
-Considere un disco hueco de radio exterior $R_2$, radio interior $R_1$ y masa $M$ uniformemente distribuida. Calculemos el campo gravitacional en el punto $P$ mostrado en la Fig.~\ref{arandela}. Analice el caso cuando $R_1 \rightarrow 0$ (disco de radio $R_2$). Analice el caso cuando $R_1 \rightarrow 0$ y $z >> R_2$.
-
+%
+\begin{align}
+\vec{g}=&\int_m G\dfrac{dm}{r^2}\hat{u}_r
+= \int_m G\dfrac{\sigma\rho d\rho d\phi}{r^2}(\cos\theta \hat{k}-\sin\theta\hat{\rho})\nonumber\\
+=& G\int_m\dfrac{\sigma\rho d\rho d\phi}{r^2}\left(\dfrac{z}{r} \hat{k}-\dfrac{\rho}{r} (\cos\phi \hat{i}+\sin\theta\hat{j})\right)
+\nonumber\\
+=& G\int_{0}^{2\pi}\int_{R_1}^{R_2}\dfrac{\sigma\rho d\rho d\phi}{(z^2+\rho^2)^{3/2}}\left(z \hat{k}-\rho (\cos\phi \hat{i}+\sin\theta\hat{j})\right)\nonumber\\
+=& G\int_{R_1}^{R_2}\dfrac{2\pi\sigma\rho d\rho d\phi}{(z^2+\rho^2)^{3/2}} \hat{k}
+=\dfrac{2mG}{(R_2^2-R_1^2)} \Bigg(\dfrac{z}{\sqrt{z^2+R_2^2} } - \dfrac{z}{\sqrt{z^2+R_1^2} }  \Bigg)\hat{k}\,.
+\label{ec:campo-gravitacional-arandela}
+\end{align}
+%
+Note que si $R_1 \rightarrow 0$, tenemos el campo de un disco o moneda de radio $R_2$:
+%
 \begin{equation}
-\vec{g}_p(z)=\dfrac{2MG}{(R_2^2-R_1^2)} \Bigg(\dfrac{z}{\sqrt{z^2+R_2^2} } - \dfrac{z}{\sqrt{z^2+R_1^2} }  \Bigg)\hat{k}
+\vec{g}(z)=\dfrac{-2mG}{R_2^2} \Bigg(1 - \dfrac{z}{\sqrt{z^2+R_2^2} }  \Bigg)\hat{k}\,.
+\label{ec:campo-gravitacional-disco}
 \end{equation}
-
-Si $R_1 \rightarrow 0$, tenemos el campo de un disco o moneda de radio $R_2$:
-
+Además, si $R_1 \rightarrow 0$ y $z >> R_2$ tenemos aproximadamente el campo de masa puntual $m$, lo cual es de esperarse ya que desde muy lejos cualquier configuración de masa ha de verse como una masa puntual, tal que:
+%
 \begin{equation}
-\vec{g}_p(z)=\dfrac{-2MG}{R_2^2} \Bigg(1 - \dfrac{z}{\sqrt{z^2+R_2^2} }  \Bigg)\hat{k}
-\end{equation}
-
-Si $R_1 \rightarrow 0$ y $z >> R_2$ tenemos aproximadamente el campo de masa puntual $M$, lo cual es de esperarse ya que desde muy lejos cualquier configuración de masa ha de verse como una masa puntual:
-
-\begin{equation}
-\vec{g} \approx -G\dfrac{M}{z^2}\hat{k}
+\vec{g} \approx -G\dfrac{m}{z^2}\hat{k}\,.
 \end{equation}  
 
-CAMPO GRAVITACIONAL DE UNA SUPERFICIE ESFÉRICA\\
 
+\subsubsection{Campo de un plano}
+%
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.7]{gravitacion/esfera1}
+\includegraphics[scale=0.6]{gravitacion/plano}
 \end{center}
-\caption{Campo de un cascarón esférico}
-\label{figesfera}
+\caption{Plano infinito con densidad superficial de masa $\sigma$.}
+\label{fig:gravitacion-plano}
 \end{figure}
+%
+Para calcular el campo de un plano muy grande (infinito) con densidad de masa $\sigma$ uniforme podemos usar el resultado obtenido para el campo de disco dado por la ec.~\ref{ec:campo-gravitacional-disco}. El campo gravitacional del plano se obtiene haciendo infinito el radio del disco, tal como se muestra en la Fig.~\ref{fig:gravitacion-plano}. Es decir:
+\begin{align}
+\vec{g}=& \lim_{R\to\infty}\dfrac{-2mG}{R^2} \left(1 - \dfrac{z}{\sqrt{z^2+R^2} }  \right)\hat{k} 
+= \lim_{R\to\infty}-2\pi\sigma G \left(1 - \dfrac{z}{\sqrt{z^2+R^2} }  \right)\hat{k}\nonumber\\
+=& -2\pi\sigma G\, \hat{k}\,,
+\label{ec:campo-gravitacional-plano}
+\end{align}
+donde usamos la función densidad $\sigma=m/(\pi R^2)$.
 
-Calculemos el camo para un cascarón esférico de radio $R$ y masa $m$ uniformemente distribuida.
+
+
+\subsubsection{Campo de una superficie esférica}
+%
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.9]{gravitacion/esfera1}
+\end{center}
+\caption{Cascarón esférico de radio R.}
+\label{fig:gravitacion-esfera}
+\end{figure}
+%
+Calculemos el campo para un cascarón esférico de radio $R$ y masa $m$ uniformemente distribuida tal como se muestra en la Fig~\ref{fig:gravitacion-esfera}.
 
 \begin{enumerate}
-\item Para $r > R$ (exterior del cascarón esférico). De acuerdo a la Fig.~\ref{figesfera}
-
+\item Para $r > R$ (exterior del cascarón esférico). De acuerdo a la Fig.~\ref{fig:gravitacion-esfera}:
 \begin{eqnarray}
-\nonumber \vec{g}_p=-G\int_m \dfrac{dm}{\rho^2}\hat{u}_{\rho}
+\vec{g}_p=-G\int_m \dfrac{dm}{\rho^2}\hat{u}_{\rho}\,.
 \end{eqnarray}
-
-Dada la simetría del problema, al integrar sólo sobrevive la componente del vector $\hat{u}_{\rho}$ en la dirección de $\hat{u}_r$; así:
-
+Dada la simetría del problema, al integrar sólo sobrevive la componente del vector $\hat{u}_{\rho}$ en la dirección de $\hat{u}_r$, tal que:
 \begin{eqnarray}
-\vec{g}_p=-G\int_m \dfrac{dm}{\rho^2}\hat{u}_{\rho}==-G\int_m \dfrac{dm}{\rho^2} \cos\beta \hat{u}_r
+\vec{g}=-G\int_m \dfrac{dm}{\rho^2}\hat{u}_{\rho}==-G\int_m \dfrac{dm}{\rho^2} \cos\beta\, \hat{u}_r\,.
 \end{eqnarray}
-
-Si la distribución superficial de masa $\sigma$ es uniforme, entonces:
-
+Además, si la distribución superficial de masa $\sigma$ es uniforme, entonces:
 \begin{equation}
 \sigma=\dfrac{m}{4\pi R^2}=\dfrac{dm}{dA}=\dfrac{dm}{2\pi R^2\sin\theta d\theta} \Rightarrow dm=\dfrac{1}{2}m\sin\theta d\theta ,
 \end{equation}
-
-además; usando la ley del coseno en el triángulo de lados $r$, $R$ y $\rho$, tenemos:
-
-\begin{enumerate}
-
-\item
+Por otro lado, usando la ley del coseno en el triángulo de lados $r$, $R$ y $\rho$, tenemos:
+%
 \begin{equation}
-\rho^2 =R^2 + r^2 -2Rr\cos\theta.  \hspace{0.5 cm} Derivando \Rightarrow \sin\theta d\theta = \dfrac{\rho}{Rr} d\rho 
+\rho^2 =R^2 + r^2 -2Rr\cos\theta.  \hspace{0.5 cm} \text{Derivando} \Rightarrow \sin\theta d\theta = \dfrac{\rho}{Rr} d\rho\,.
 \end{equation}
-\item
 \begin{equation}
-R^2=r^2+\rho^2 -2r\rho \cos\beta \Rightarrow \cos\beta =\dfrac{r^2+\rho^2 -R^2}{2r\rho}
+R^2=r^2+\rho^2 -2r\rho \cos\beta \Rightarrow \cos\beta =\dfrac{r^2+\rho^2 -R^2}{2r\rho}\,.
 \end{equation}
-\end{enumerate}
-
-Reemplazando los resultados anteriores en la ecuación para el campo:
-
+%
+Reemplazando las tres ecuaciones anteriores en la ecuación para el campo tenemos que:
 \begin{eqnarray}
-\nonumber \vec{g}_p &=& -\dfrac{Gm}{4Rr^2}\hat{u}_r \int_{r-R}^{r+R} \bigg(1+ \dfrac{r^2-R^2}{\rho^2}  \bigg)d\rho \\
-\vec{g}_p &=& -G \dfrac{m}{r^2}\hat{u}_r
-\label{ecucascaron}
+\vec{g}(r) &=& -\dfrac{Gm}{4Rr^2}\hat{u}_r \int_{r-R}^{r+R} \bigg(1+ \dfrac{r^2-R^2}{\rho^2}  \bigg)d\rho = -G \dfrac{m}{r^2}\hat{u}_r\,.
+\label{ec:campo-gravitacional-cascaron}
 \end{eqnarray}
 
-\item Para $r < R$ (interior del cascarón esférico). De acuerdo a la Fig.~\ref{figesfera}
-
+\item Para $r < R$ (interior del cascarón esférico). De acuerdo a la Fig.~\ref{fig:gravitacion-esfera}:
 \begin{eqnarray}
-\nonumber \vec{g}_p &=& -\dfrac{Gm}{4Rr^2}\hat{u}_r \int_{R-r}^{r+R} \bigg(1+ \dfrac{r^2-R^2}{\rho^2}  \bigg)d\rho \\
-\vec{g}_p &=& \hat{0}
+\vec{g} &=& -\dfrac{Gm}{4Rr^2}\hat{u}_r \int_{R-r}^{r+R} \bigg(1+ \dfrac{r^2-R^2}{\rho^2}  \bigg)d\rho = \hat{0}\,.
 \end{eqnarray}
-
 \end{enumerate}
 
-El resultado obtenido para el campo gravitacional de un cascarón esférico, marca uno de los resultados fundamentales en la teoría de campos. 
+El resultado obtenido para el campo gravitacional de un cascarón esférico, marca uno de los resultados fundamentales en la teoría de campo gravitacional. 
 \begin{itemize}
 \item El campo gravitacional en el exterior de un cascarón esférico, es equivalente al campo generado por una masa puntual $m$ situada en el centro de masa de dicho cascarón.
 \item El campo gravitacional en el interior es nulo. 
 \end{itemize}
 
-\vspace{0.5 cm}
 
-CAMPO GRAVITACIONAL DE UNA ESFERA MACIZA DE DENSIDAD UNIFORME DE MASA $\rho$ \\
-
+\subsubsection{Campo de una esfera maciza con densidad de masa uniforme $\rho$}
+%
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.7]{gravitacion/esfera2}
 \end{center}
-\caption{Campo genrado por una esfera maciza}
-\label{figesfera2}
+\caption{Esfera maciza de radio $R$ y masa $m$.}
+\label{fig:gravitacion-esfera2}
 \end{figure}
-
+%
 \begin{enumerate}
-\item Para $r > R$ (exterior de la esfera), podemos integrar en cascarones esféricos y usar el resultado obtenido para el campo generado por un cascarón de masa diferencial $dm$ en el punto $P$ (ec.~\eqref{ecucascaron}).
-
+\item Para $r > R$ (exterior de la esfera), podemos integrar en cascarones esféricos y usar el resultado obtenido para el campo generado por un cascarón de masa diferencial $dm$ en el punto $P$ (ec.~\eqref{ec:campo-gravitacional-cascaron}).
 \begin{eqnarray}
-\vec{g}(r)=\int_m d \vec{g} = \int_m \bigg(-G \dfrac{dm}{r^2}\hat{u}_r \bigg)=-G \dfrac{1}{r^2}\hat{u}_r\int_m dm= -G \dfrac{m}{r^2}\hat{u}_r ,
+\vec{g}(r)=\int_m d \vec{g} = \int_m \bigg(-G \dfrac{dm}{r^2}\hat{u}_r \bigg)=-G \dfrac{1}{r^2}\hat{u}_r\int_m dm= -G \dfrac{m}{r^2}\hat{u}_r\,,
+\label{ec:campo-gravitacional-esfera-exterior}
 \end{eqnarray}
-
 donde debe quedar claro que ahora $m$ es la masa neta de la esfera maciza.
 
-\item Para $r < R$ (interior de la esfera) sólo contribuye la masa $m'$ localizada en la esfera de radio $r < R$ tal como se muestra en la Fig.~\ref{figesfera2} , así:
-
+\item Para $r < R$ (interior de la esfera) sólo contribuye la masa $m'$ localizada en la esfera de radio $r < R$ tal como se muestra en la Fig.~\ref{fig:gravitacion-esfera2} , tal que:
 \begin{eqnarray}
-\vec{g}=-G \dfrac{m'}{r^2}\hat{u}_r = -G \bigg(m \dfrac{r^3}{R^3} \bigg)\dfrac{1}{r^2}\hat{u}_r= -Gm \dfrac{r}{R^3}\hat{u}_r ,
+\vec{g}(r)=-G \dfrac{m'}{r^2}\hat{u}_r = -G \bigg(m \dfrac{r^3}{R^3} \bigg)\dfrac{1}{r^2}\hat{u}_r= -Gm \dfrac{r}{R^3}\hat{u}_r\,,
+\label{ec:campo-gravitacional-esfera-interior}
 \end{eqnarray}
 
 donde tuvimos en cuenta que la densidad de la esfera es uniforme, así:
 \begin{displaymath}
-\rho=\dfrac{m}{\dfrac{4}{3}\pi R^3 } = \dfrac{m'}{\dfrac{4}{3}\pi r^3 } \Rightarrow m'=m \dfrac{r^3}{R^3}
+\rho=\dfrac{m}{\dfrac{4}{3}\pi R^3 } = \dfrac{m'}{\dfrac{4}{3}\pi r^3 } \Rightarrow m'=m \dfrac{r^3}{R^3}\,.
 \end{displaymath}
 
 \end{enumerate}
 
-Al igual que el resultado obtenido para el campo gravitacional de un cascarón esférico; el campo de una esfera maciza marca uno de los resultados fundamentales en la teoría de campos. 
+Al igual que el resultado obtenido para el campo gravitacional de un cascarón esférico. El campo de una esfera maciza marca uno de los resultados fundamentales en la teoría de campos. 
 \begin{itemize}
-\item El campo gravitacional atractivo en el exterior de una esfera, es equivalente al campo generado por una masa puntual $m$ situada en el centro de masa de dicho esfera. Note que externamente no importa si la masa $m$ está distribuida en un cascarón esférico o en una esfera maciza.
+\item El campo gravitacional atractivo en el exterior de una esfera, es equivalente al campo generado por una masa puntual $m$ situada en el centro de masa de la esfera. Note que externamente no importa si la masa $m$ está distribuida en un cascarón esférico o en una esfera maciza.
 \item El campo gravitacional en el interior, es el campo generado por la masa localizada en una esfera de radio $r < R$, es decir, el campo es generado por la masa que hay desde el punto interno hasta el centro de masa. 
 \end{itemize}
 
 
+
+
+
+
 \subsection{Ejemplos de potencial gravitacional}
 
-ANILLO\\
 
-Consideremos el anillo de masa $m$ uniformemente distribuida y radio $R$ mostrado en la Fig.~\ref{fanillo}. Calculemos el potencial gravitacional en el punto $P$.
+\subsubsection{Potencial de una barra}
+Consideremos la barra mostrada en la Fig.~\ref{fig:gravitacion-barra3} de masa $m$ y longitud $l$. El potencial gravitacional en el punto $P$ es:
+\begin{align}
+V=&-\int_m G\dfrac{dm}{r} = -\int_m G \dfrac{\lambda dx}{r}
+=-G\int_{-x_1}^{x_2}\dfrac{\lambda dx}{\sqrt{y^2+x^2}}\nonumber\\
+=& -G\lambda \left[\ln\left(\dfrac{\sqrt{x_2^2+y^2}}{y}+\dfrac{x_2}{y}\right)-\ln\left(\dfrac{\sqrt{x_1^2+y^2}}{y}-\dfrac{x_1}{y}\right)\right]\nonumber\\
+=& -G\lambda \ln\left(\dfrac{\sqrt{x_2^2+y^2}+x_2}{\sqrt{x_1^2+y^2}-x_1}\right)\,,
+\label{ec:potencial-gravitacinal-barra}
+\end{align}
+donde $\lambda=m/l=m/(x_1+x_2)$ es la densidad de masa de la barra.
+
+%Para el caso de un alambre muy largo (infinito) hacemos $x_1\to\infty$ and $x_2\to\infty$.
+
+
+
+\subsubsection{Potencial de un anillo}
+
+Consideremos el anillo de masa $m$ uniformemente distribuida y radio $R$ mostrado en la Fig.~\ref{fig:gravitacion-anillo}. El potencial gravitacional en el punto $P$ es:
 
 \begin{eqnarray}
-V=-G\int_m \dfrac{dm}{r}=-G \dfrac{1}{r}\int_m dm =-G \dfrac{m}{r}=-G \dfrac{m}{\sqrt{z^2+R^2}}
+V=-G\int_m \dfrac{dm}{r}=-G \dfrac{1}{r}\int_m dm =-G \dfrac{m}{r}=-G \dfrac{m}{\sqrt{z^2+R^2}}\,,
+\label{ec:potencial-gravitacinal-anillo}
 \end{eqnarray}
-
-Note que:
-
+donde la distancia $r$ desde el diferencial al punto medida $P$ es constante.
+Por otro lado, note que:
 \begin{eqnarray}
-\vec{g}=-\vec{\nabla}V=-\hat{k}\dfrac{d}{dz}V(z)=-Gm \dfrac{z}{(z^2+R^2)^{3/2}} \hat{k}
+\vec{g}(z)=-\vec{\nabla}V=-\hat{k}\dfrac{d}{dz}V(z)=-Gm \dfrac{z}{(z^2+R^2)^{3/2}} \hat{k}\,.
 \end{eqnarray}
+Resultado idéntico al obtenido usando la definición de campo (ver ec.~\ref{ec:campo-gravitacional-anillo}). Tenga en cuenta que para este caso particular, ha sido más fácil calcular el potencial y a partir de él calcular el campo gravitacional. 
 
-Resultado idéntico que calculamos anteriormente usando la definición de campo. Tenga en cuenta que para este caso particular, ha sido más fácil calcular el potencial y a partir de él calcular el campo gravitacional. Dicha facilidad ha radicado en el hecho de que el potencial es una cantidad escalar. Desafortunadamente no siempre sucede lo mismo. Puede darse el caso donde el cálculo del potencial requiere calcular una integral complicada y el cálculo del campo no ser tan complicado.
-
-\hspace{0.5 cm}
-
-
-\textbf{EJERCICIO:} Suponga que una masa $m'$ es colocada en el punto $P$. Calcule la rapidez de $m'$ justo cuando pasa por el centro del anillo. ¿Qué condición matemática debe cumplirse para que $m'$ ejecute un movimiento armónico simple? Determine la frecuencia de oscilación.\\
+\textbf{Ejercicio:} Suponga que una masa $m'$ es colocada en el punto $P$. Calcule la rapidez de $m'$ justo cuando pasa por el centro del anillo. ¿Qué condición matemática debe cumplirse para que $m'$ ejecute un movimiento armónico simple? Determine la frecuencia de oscilación.\\
 \textit{Respuesta:} 
 \begin{displaymath}
 v_0=\sqrt{2Gm( \dfrac{1}{R}-\dfrac{1}{\sqrt{R^2+z^2} } )}
 \end{displaymath}
-
 Si $z<<R \Rightarrow \dfrac{d^2z}{dt^2}+ \dfrac{Gm}{R^3} z \approx 0$ y así:
-
 \begin{displaymath}
-\omega_0=\sqrt{\dfrac{Gm}{R^3} }
+\omega_0=\sqrt{\dfrac{Gm}{R^3} }\,.
 \end{displaymath} 
 
-\vspace{0.6 cm}
-
-ARANDELA\\
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.6]{gravitacion/arandela}
-\end{center}
-\caption{Arandela}
-\label{arandela}
-\end{figure}
-
-Calculemos el potencial gravitacional de una arandela de radio exterior $R_2$ y radio interior $R_1$ en el punto $P$ mostrado en la Fig.~\ref{arandela}.
 
 
+\subsubsection{Potencial de una arandela y un disco}
+Calculemos el potencial gravitacional de la arandela de radio exterior $R_2$ y radio interior $R_1<R_2$ en el punto $P$ mostrado en la Fig.~\ref{fig:gravitacion-arandela}.
+\begin{align}
+V=& -G\int_m \dfrac{dm}{r} = -G\int_0^{2\pi}\int_{R_1}^{R_2}\dfrac{\sigma \rho d\rho d\phi}{\sqrt{z^2+\rho^2}}\nonumber\\
+=& -G\int_{R_1}^{R_2}\dfrac{\sigma 2\pi\rho d\rho }{\sqrt{z^2+\rho^2}}=-2\pi\sigma G\left(\sqrt{R_2^2+z^2} -\sqrt{R_1^2+z^2}\right)
+\nonumber\\
+=& -\dfrac{2G m}{(R_2^2-R_1^2)} \left(\sqrt{R_2^2+z^2} -\sqrt{R_1^2+z^2}\right)\,.
+\label{ec:potencial-gravitacional-arandela}
+\end{align}
+Note que podemos determinar el campo gravitacional a partir de este potencial de la siguiente manera:
+\begin{align}
+\vec{g}(z)=&-\vec{\nabla}V(z)=-\hat{k}\dfrac{d}{dz}V(z)\nonumber\\
+=&\dfrac{2mG}{(R_2^2-R_1^2)} \Bigg(\dfrac{z}{\sqrt{z^2+R_2^2} } - \dfrac{z}{\sqrt{z^2+R_1^2} }  \Bigg)\hat{k}\,,
+\end{align}
+expresión que fue calculada directamente con la definición del campo gravitacional (ver ec.~\ref{ec:campo-gravitacional-arandela}).
 
-\begin{equation}
-V(z)=\dfrac{2mG}{(R_2^2-R_1^2)}\Bigg[\sqrt{R_2^2+z^2} -\sqrt{R_1^2+z^2}\Bigg]
-\end{equation}
+Para un disco de radio $R$ y masa $m$ usamos la ec.~\ref{ec:potencial-gravitacional-arandela} con $R_1=0$ y $R_2=R$, tal que:
+\begin{align}
+V=& -\dfrac{2G m}{R^2} \left(\sqrt{R^2+z^2} -z\right)=-2\pi G \sigma \left(\sqrt{R^2+z^2} -z\right)\,.
+\label{ec:potencial-gravitacinal-disco}
+\end{align}
 
-Determinemos el campo gravitacional a partir del potencial gravitacinal:
 
-\begin{equation}
-\vec{g}(z)=-\vec{\nabla}V(z)=-\hat{k}\dfrac{d}{dz}V(z)=\vec{g}(z)=\dfrac{2MG}{(R_2^2-R_1^2)} \Bigg(\dfrac{z}{\sqrt{z^2+R_2^2} } - \dfrac{z}{\sqrt{z^2+R_1^2} }  \Bigg)\hat{k} ,
-\end{equation}
 
-expresión que fue calculada directamente con la definición del campo gravitacional.
-
-\hspace{1.0 cm}
-
-POTENCIAL GRAVITACIONAL Y CAMPO DE UN PLANO INFINITO DE DENSIDAD SUPERFICIAL DE MASA $\sigma$ 	CONSTANTE\\
+\subsubsection{Potencial de un plano infinito con densidad superficial de masa $\sigma$ constante}
 
 \begin{equation}
-V(z)=2\pi \sigma G z
+V(z)=\lim_{R\to\infty} V_{\text{disco}} 
+=\lim_{R\to\infty} \left[-2\pi G \sigma \left(\sqrt{R^2+z^2} -z\right)\right] = -\infty +2\pi G \sigma z\,,
 \end{equation}
-
-y así, el campo gravitacional es:
-
+dado que el potencial es infinito, realizamos el proceso de renormalización. Éste consiste en tomar la parte finita del potencial. Por lo tanto, el potencial renormalizado de un plano infinito de densidad de masas $\sigma$ es:
+\begin{equation}
+V(z)=2\pi G \sigma z\,.
+\label{ec:potencial-gravitacional-plano}
+\end{equation} 
+Note que podemos determinar el campo gravitacional a partir de este potencial de la siguiente manera:
 \begin{eqnarray}
-\vec{g}=-\vec{\nabla}V(z)=-\hat{k}\dfrac{d}{dz}V(z)=-2\pi\sigma G \hat{k}
+\vec{g}=-\vec{\nabla}V(z)=-\hat{k}\dfrac{d}{dz}(2\pi G \sigma z)=-2\pi\sigma G \hat{k}\,,
 \end{eqnarray}
+el cual fue calculado directamente con la definición del campo gravitacional (ver ec.~\ref{ec:campo-gravitacional-plano}).
 
-POTENCIAL GRAVITACIONAL DE UNA SUPERFICIE ESFÉRICA DE RADIO R\\ 
+
+
+\subsubsection{Potencial de una superficie esférica de radio R} 
 
 \begin{enumerate}
-\item Para $r \geq R$ exterior del cascarón esférico:
+\item Para el exterior del cascarón esférico ($r \geq R$):
 
 \begin{equation}
 V=-G \dfrac{m}{r}  
 \end{equation}
 
-\item Para $r \leq R$ interior del cascarón esférico:
+\item Para el interior del cascarón esférico ($r \leq R$):
 
 \begin{equation}
 V=-G \dfrac{m}{R}=cte.
@@ -1062,21 +1084,20 @@ V=-G \dfrac{m}{R}=cte.
 
 \end{enumerate}
 
-POTENCIAL GRAVITACIONAL DE UNA ESFÉRA MACIZA DE RADIO R\\
+\subsubsection{Potencial de una esfera maciza de radio R}
 
 \begin{enumerate}
-\item Para $r \geq R$ exterior de la esfera:
+\item Para el exterior de la esfera ($r \geq R$):
 
 \begin{equation}
 V=-G \dfrac{m}{r}  
 \end{equation}
 
-\item Para $r \leq R$ interior de la esfera:
+\item Para el interior de la esfera ($r \leq R$):
 
 \begin{equation}
 V=\dfrac{Gm}{2R^3}(r^2-3R^2)
 \end{equation}
 
 \end{enumerate}
-%%%%%%%%%%%%%%%%%%%% END G %%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%% END GRAV %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -8,8 +8,8 @@
 \usepackage{amsmath}
 \usepackage{amscd}
 %\usepackage{youngtab}
-\usepackage{titlesec}
-\usepackage[latin1]{inputenc}
+%\usepackage{titlesec}
+\usepackage[utf8]{inputenc}
 \usepackage{listings}
 \usepackage{enumerate}
 \usepackage{amssymb}
@@ -88,7 +88,7 @@
 \frontmatter%enumera en romano
 
 \input{portada}
-\newpage{\pagestyle{empty}\cleardoublepage} %deja una p醙ina en blanco
+\newpage{\pagestyle{empty}\cleardoublepage} %deja una p谩gina en blanco
 %%+++++++++++++++DEDICATORIA++++++++++++++++++++
 %\thispagestyle{empty}
 %%\include{dedicatoria} \frontmatter
@@ -103,59 +103,37 @@
 %\textit{a la vida y a la naturaleza por permitirnos ser parte de ella,}
 %\end{flushright}
 %\begin{flushright}
-%\textit{... a todos aquellos que llevamos en el coraz髇.}
+%\textit{... a todos aquellos que llevamos en el coraz贸n.}
 %\end{flushright}
 %%\newpage{\pagestyle{empty}\cleardoublepage}
 %%%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %\chapter{Objetivos y programa del curso}
 %\input{objetivos}
 %\newpage{\pagestyle{empty}\cleardoublepage}
-%\chapter{An閏dota an髇ima}
+%\chapter{An茅cdota an贸nima}
 %\input{anecdota}
 \newpage{\pagestyle{empty}\cleardoublepage}
 %%\newpage{\pagestyle{empty}\cleardoublepage}
 \tableofcontents %\mainmatter \listoftables \listoffigures
 %\mainmatter %comienza a enumerar desde aqui
-%\chapter*{Introducci髇\markboth{Introducci髇}{Introducci髇}}
+%\chapter*{Introducci贸n\markboth{Introducci贸n}{Introducci贸n}}
 %\label{sec:introduccion}
-%\addcontentsline{toc}{chapter}{Introducci髇} % para que no lo enumere
+%\addcontentsline{toc}{chapter}{Introducci贸n} % para que no lo enumere
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \mainmatter
-%\chapter{Introducci髇}
-%\input{introduccion/Introduccion.tex}
+\chapter{Introducci贸n}
+\input{introduccion/Introduccion.tex}
 
-%\chapter{Gravitaci髇}
-%\input{gravitacion/gravitacion.tex}
-%\chapter{Electrost醫ica}
-%\input{electrostatica/electrostatica.tex}
-%\chapter{Magnetost醫ica}
-%\input{magnetostatica/magnetostatica.tex}
-\chapter{Inducci髇 electromagn閠ica}
-%\input{induccionEM/induccionEM.tex}
+\chapter{Gravitaci贸n}
+\input{gravitacion/gravitacion.tex}
+\chapter{Electrost谩tica}
+\input{electrostatica/electrostatica.tex}
+\chapter{Magnetost谩tica}
+\input{magnetostatica/magnetostatica.tex}
+\chapter{Inducci贸n electromagn茅tica}
+\input{induccionEM/induccionEM.tex}
 
-%%%BEGIN+++++++++ induccionEM.tex +++++++++++++++++
 
-El principio de inducci髇 fue formulado por Michael Faraday  (Inglaterra) e independientemente por Joseph Henry (Estados Unidos) en el a\~no de 1831~\cite{}. Hoy en d韆, este principio es la base para producir la electricidad en la centrales hidroel閏tricas que posteriormente es conducida hasta nuestros hogares.
-
-\section{Flujo magn閠ico}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.8]{induccionEM/flujoB-definicion.pdf}
-\end{center}
-\caption{Flujo magn閠ico atravezando la superficie $A$.}
-\label{fig:flujoB-def}
-\end{figure}
-%
-Se define el flujo agn閠ico $\Phi_B$ a trav閟 de la superficie de 醨ea $A$ como
-\begin{align}
-\Phi_B=\int_A \vec{B}\cdot d\vec{A}\,,
-\end{align}
-donde $d\vec{A}$ es un vector normal a la superficie, y forma un 醤gulo $\theta$ con el vector $\vec{B}$, tal como se muesstra en la Fig.~\ref{fig:flujoB-def}. La integral debe realizarse sobre toda el 醨ea $A$. 
-
-\section{Principio de inducci髇}
-
-%%%END+++++++++ induccionEM ++++++++++++++++++++++
 
 
 

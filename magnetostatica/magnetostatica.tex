@@ -20,38 +20,38 @@
 
 %%%++++++++++++++++++++++++++++++++++++
 
-IntroducciÛn histÛrica
+Introducci√≥n hist√≥rica
 
-\section{Fuerza magnÈtica}
-Una partÌcula de carga $q$, con velocidad $\vec{v}$ que entra a una regiÛn del espacio donde existe un campo magnÈtico $\vec{B}$, siente una fuerza magnÈtica:
+\section{Fuerza magn√©tica}
+Una part√≠cula de carga $q$, con velocidad $\vec{v}$ que entra a una regi√≥n del espacio donde existe un campo magn√©tico $\vec{B}$, siente una fuerza magn√©tica:
 
 \begin{equation}
 \vec{F}_M=q \vec{v} \times \vec{B}
 \end{equation}
 
-\section{Fuentes de campo magnÈtico}
+\section{Fuentes de campo magn√©tico}
 
-Para completar la descripciÛn de la interacciÛn magnÈtica, exploremos su origen.
+Para completar la descripci√≥n de la interacci√≥n magn√©tica, exploremos su origen.
 
 \subsection{Ley de Biot-Savart}
 
-Poco despuÈs de que Oersted descubriera la desviaciÛn de la aguja, Jean Baptiste biot y Felix Savart cuantificaron la fuerza magnÈtica ejercida por un alambre sobre la aguja magnÈtica. El hallasgo experimental, llamado la ley de Biot Savart, se resume en la siguiente expresiÛn matem·tica.
+Poco despu√©s de que Oersted descubriera la desviaci√≥n de la aguja, Jean Baptiste biot y Felix Savart cuantificaron la fuerza magn√©tica ejercida por un alambre sobre la aguja magn√©tica. El hallasgo experimental, llamado la ley de Biot Savart, se resume en la siguiente expresi√≥n matem√°tica.
 
 \begin{displaymath}
 \vec{B}=\dfrac{\mu_0 I}{4\pi}\int_l \dfrac{d\vec{l} \times \hat{u}_r}{r^2} ,
 \end{displaymath}
-donde $\mu_0=4\pi \times 10^{-7}$ T m/A, es una constante conocida como la permeabilidad del vacÌo.
+donde $\mu_0=4\pi \times 10^{-7}$ T m/A, es una constante conocida como la permeabilidad del vac√≠o.
 
 \subsection{Ejemplos:}
 
-\subsection*{Campo magnÈtico de un alambre muy largo (infinito)}
+\subsection*{Campo magn√©tico de un alambre muy largo (infinito)}
 Supongamos que tenemos un alambre delgado, muy largo y que transporta una corriente $I$ constante tal como se muestra en la Figura \ref{fig-alambreinfinito}.
 
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.8]{magnetostatica/alambreinfinito}
 \end{center}
-\caption{Campo magnÈtico de un alambre recto muy largo (infinito)}
+\caption{Campo magn√©tico de un alambre recto muy largo (infinito)}
 \label{fig-alambreinfinito}
 \end{figure}
 
@@ -66,15 +66,15 @@ Supongamos que tenemos un alambre delgado, muy largo y que transporta una corrie
 &=&\dfrac{\mu_0 I}{2\pi\rho}\hat{u}_{\phi}
 \end{eqnarray}
 
-Note que el campo magnÈtico rodea al alambre de acuerdo a la regla de la mano derecha. En general diremos que el campo magnÈtico es un vector circulante en el sentido que est· circulando alrededor del alambre. Adem·s, note que el campo magÈtico depende de la distancia radial al alambre, en este caso la variable $\rho$ (no se llamÛ $r$ para no generar confuciones a la hora de integrar).
+Note que el campo magn√©tico rodea al alambre de acuerdo a la regla de la mano derecha. En general diremos que el campo magn√©tico es un vector circulante en el sentido que est√° circulando alrededor del alambre. Adem√°s, note que el campo mag√©tico depende de la distancia radial al alambre, en este caso la variable $\rho$ (no se llam√≥ $r$ para no generar confuciones a la hora de integrar).
 
-\subsection*{Campo magnÈtico de un alambre finito}
+\subsection*{Campo magn√©tico de un alambre finito}
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.8]{magnetostatica/barra4}
 \end{center}
-\caption{Campo magnÈtico de un alambre recto finito}
+\caption{Campo magn√©tico de un alambre recto finito}
 \label{fig-alambrefinito}
 \end{figure}
 
@@ -88,15 +88,15 @@ De acuerdo a la Figura \ref{fig-alambrefinito}:
 &=&\dfrac{\mu_0 I }{4\pi y}\Big(\dfrac{x_2}{\sqrt{x_2^{2}+y^{2}}} + \dfrac{x_1}{\sqrt{x_1^{2}+y^{2}}}\Big)\hat{k} \equiv  \dfrac{\mu_0 I }{4\pi y}(\cos\theta_1 -\cos\theta_2)\hat{k}
 \end{eqnarray}
 
-Note que si el alambre es infinito basta con tomar el lÌmite cuando $x_1$ y $x_2$ tienden a infinito Û $\theta_1 =0∞$ y $\theta_2=\pi/2$. 
+Note que si el alambre es infinito basta con tomar el l√≠mite cuando $x_1$ y $x_2$ tienden a infinito √≥ $\theta_1 =0^0$ y $\theta_2=\pi/2$. 
 
-\subsection*{Campo magnÈtico de un alambre circular}
+\subsection*{Campo magn√©tico de un alambre circular}
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.8]{magnetostatica/campoB-anillo}
 \end{center}
-\caption{Campo magnÈtico en el eje de un anillo de radio R}
+\caption{Campo magn√©tico en el eje de un anillo de radio R}
 \label{fig-campoB-anillo}
 \end{figure}
 
@@ -108,7 +108,7 @@ De acuerdo a la Figura \ref{fig-campoB-anillo}, tenemos que:
 =\dfrac{\mu_0 I}{4\pi}\int_l dl\dfrac{(\cos\theta \hat{k}+\sin\theta \hat{\rho})}{r^{2}} \\ \nonumber
 &=&\dfrac{\mu_0 I}{4\pi}\Big[\int_l dl \dfrac{\cos\theta \hat{k}}{r^{2}}+\int_l dl \dfrac{\sin\theta \hat{\rho}}{r^{2}}\Big]
 \end{eqnarray}
-Dada la simetrÌa del problema, el campo sÛlo sobrevive en la direcciÛn $\hat{k}$ ($\int_l dl \hat{\rho}=\vec{0}$).
+Dada la simetr√≠a del problema, el campo s√≥lo sobrevive en la direcci√≥n $\hat{k}$ ($\int_l dl \hat{\rho}=\vec{0}$).
 
 \begin{eqnarray}
 \nonumber
@@ -119,25 +119,25 @@ Dada la simetrÌa del problema, el campo sÛlo sobrevive en la direcciÛn $\hat{k}$
 =\dfrac{\mu_0 I}{2} \dfrac{R^{2}}{(R^{2}+z^{2})^{3/2}}\hat{k}
 \end{eqnarray}
 
-En general, el campo magnÈtico de un alambre circular tiene una estructura muy complicada. En cualquier punto del espacio est· descrito por la combinaciÛn de dos funciones muy especiales; los polinomios de Legendre y los armÛnicos esfÈricos. En la Figura \ref{fig-campomagneticoalambrecircular2} se muestran algunas de las lÌneas de campo. Note su similitud con las lÌneas de campo de im·n de barra o del mismo planeta tierra.
+En general, el campo magn√©tico de un alambre circular tiene una estructura muy complicada. En cualquier punto del espacio est√° descrito por la combinaci√≥n de dos funciones muy especiales; los polinomios de Legendre y los arm√≥nicos esf√©ricos. En la Figura \ref{fig-campomagneticoalambrecircular2} se muestran algunas de las l√≠neas de campo. Note su similitud con las l√≠neas de campo de im√°n de barra o del mismo planeta tierra.
  
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.4]{magnetostatica/campomagneticoanillo}
 \end{center}
-\caption{LÌneas de campo magnÈtico de un segmento circular}
+\caption{L√≠neas de campo magn√©tico de un segmento circular}
 \label{fig-campomagneticoalambrecircular2}
 \end{figure}
 
-\subsection*{Campo magnÈtico de un segmento circular de alambre}
+\subsection*{Campo magn√©tico de un segmento circular de alambre}
 
-Calculemos el campo $\vec{B}$ en el punto $O$ generado por el dispositivo mostrado en la Figura \ref{fig-segmentocircular}. Para ello, sÛlo es necesario calcular el campo magnÈtico generado por el sector circular de ·ngulo $\theta$, ya que las secciones rectas no generan campo en el punto $O$.
+Calculemos el campo $\vec{B}$ en el punto $O$ generado por el dispositivo mostrado en la Figura \ref{fig-segmentocircular}. Para ello, s√≥lo es necesario calcular el campo magn√©tico generado por el sector circular de √°ngulo $\theta$, ya que las secciones rectas no generan campo en el punto $O$.
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.4]{magnetostatica/segmentocircular}
 \end{center}
-\caption{Campo magnÈtico de un segmento circular}
+\caption{Campo magn√©tico de un segmento circular}
 \label{fig-segmentocircular}
 \end{figure}
 
@@ -150,12 +150,12 @@ Calculemos el campo $\vec{B}$ en el punto $O$ generado por el dispositivo mostra
 =\dfrac{\mu_0 I}{4\pi R}\theta \otimes ,
 \end{eqnarray}
 
-donde $\otimes$ indica que el campo est· entrando de la hoja.
+donde $\otimes$ indica que el campo est√° entrando de la hoja.
 
-\subsection*{Campo magnÈtico en el interior de un solenoide}
+\subsection*{Campo magn√©tico en el interior de un solenoide}
 
-Consideremos un cilindrÛ de radio $R$ y altura $l$ en el cual se enrrolla un alambre. Si suponemos que se tienen $N$ vueltas muy juntas, podemos pensar que en general se tiene una densidad de corriente que fluye circularmente alrededor del cilindro.\\
-Usando el resultado obtenido para el campo magnÈtico en el eje de una espira circular, tenemos que el diferencial de campo magnÈtico $dB$ generado por un diferencial de corriente $dI$, es:
+Consideremos un cilindr√≥ de radio $R$ y altura $l$ en el cual se enrrolla un alambre. Si suponemos que se tienen $N$ vueltas muy juntas, podemos pensar que en general se tiene una densidad de corriente que fluye circularmente alrededor del cilindro.\\
+Usando el resultado obtenido para el campo magn√©tico en el eje de una espira circular, tenemos que el diferencial de campo magn√©tico $dB$ generado por un diferencial de corriente $dI$, es:
 
 \begin{eqnarray}
 dB=\dfrac{\mu_0 dI}{2}\dfrac{R^{2}}{(R^{2}+z^{2})^{3/2}}
@@ -171,7 +171,7 @@ Donde hemos definido la \textit{densidad de vueltas del solenoide} como:
 n=(N/l)
 \end{equation}
 
-Usando lo anterior, tenemos que el campo magnÈtico en el interior del solenoide es:
+Usando lo anterior, tenemos que el campo magn√©tico en el interior del solenoide es:
 
 \begin{eqnarray}
 \nonumber
@@ -181,13 +181,13 @@ B&=&\int_{-l/2}^{l/2}dB=\int_{-l/2}^{l/2}nI \dfrac{\mu_0}{2}\dfrac{R^{2}}{(R^{2}
 &=&\dfrac{\mu_0 n Il}{\sqrt{l^{2}+4R^{2}}}
 \end{eqnarray}
 
-Generalmente los solenoides son largos, de tal modo que $l\gg R$. AsÌ, en la expresiÛn anterior:
+Generalmente los solenoides son largos, de tal modo que $l\gg R$. As√≠, en la expresi√≥n anterior:
 
 \begin{eqnarray}
 B \approx \mu_0 nI
 \end{eqnarray}
 
-Este resultado anterior ser· calculado de una forma m·s r·ida cuando introduzcamos la Ley de Ampere.
+Este resultado anterior ser√° calculado de una forma m√°s r√°ida cuando introduzcamos la Ley de Ampere.
 
 \subsection*{Esfera rotante}
 
